@@ -1,0 +1,131 @@
+#!/bin/bash
+
+#./Allclean
+rm -r 0
+cp -r 0org 0
+
+
+echo "blockMesh"
+blockMesh > log.blockMesh
+
+echo "setSet"
+setSet -constant > log.Setset  << EOF
+cellSet aircon new boxToCell (-0.001 3.999 -0.001) (0.501 4.501 0.101)
+cellSet aircon invert
+quit
+EOF
+
+echo "subsetMesh"
+#subsetMesh aircon -overwrite > log.subsetMesh
+
+# ceilingと境界を同期する場合
+subsetMesh aircon -overwrite -patch ceiling > log.subsetMesh
+
+# oldInternalFacesはwallのためboundaryをかきかえないといけない。
+#python sed.py ./constant/polyMesh/boundary
+
+<<COMMENTOUT
+echo "setSet"
+setSet -constant > log.Setset  << EOF
+faceSet inlet new boxToFace (0.499 3.999 -0.001) (0.501 4.501 0.101)
+quit
+EOF
+COMMENTOUT
+
+echo "setSet"
+setSet -constant > log.Setset  << EOF
+faceSet inlet new boxToFace (0.499 3.999 -0.001) (0.501 4.251 0.101)
+faceSet outlet new boxToFace (-0.001 4.449 -0.001) (0.501 4.501 0.101)
+quit
+EOF
+
+
+
+echo "createPatch"
+createPatch -overwrite > log.CreatePatch
+
+# 境界条件にinletを追加
+echo "inlet_plus"
+python ./makeinlet/inletU.py ./0/U
+python ./makeinlet/inletT.py ./0/T
+python ./makeinlet/inletp.py ./0/p
+python ./makeinlet/inletp_rgh.py ./0/p_rgh
+python ./makeinlet/inletnut.py ./0/nut
+python ./makeinlet/inletk.py ./0/k
+python ./makeinlet/inletepsilon.py ./0/epsilon
+python ./makeinlet/inletalphat.py ./0/alphat
+
+echo "outlet_plus"
+python ./makeoutlet/outletU.py ./0/U
+python ./makeoutlet/outletT.py ./0/T
+python ./makeoutlet/outletp.py ./0/p
+python ./makeoutlet/outletp_rgh.py ./0/p_rgh
+python ./makeoutlet/outletnut.py ./0/nut
+python ./makeoutlet/outletk.py ./0/k
+python ./makeoutlet/outletepsilon.py ./0/epsilon
+python ./makeoutlet/outletalphat.py ./0/alphat
+
+
+<<COMMENT
+echo "setSet"
+setSet -constant > log.setSet2 << EOF
+cellSet refineCell1 new boxToCell (1.499 3.279 -0.001) (2.101 3.721 1.701)
+quit
+EOF
+
+
+echo "refineMesh"
+refineMesh -overwrite > log.refineMesh1
+COMMENT
+
+
+
+
+<< COMMENTOUT
+echo "blockMesh"
+blockMesh > log.blockMesh
+
+echo "setSet"
+setSet -constant > log.Setset  << EOF
+faceSet inlet new boxToFace (3.999 2.029 -0.901) (4.001 3.531 0.901)
+faceSet outlet new boxToFace (-0.001 1.919 -2.001) (0.901 4.021 -1.999)
+cellSet refineCell2 new boxToCell (1.249 3.279 -0.251) (2.401 3.921 1.801)
+faceSet inlet new boxToFace (-0.001 3.499 -0.001) (0.001 4.001 0.1.001)
+quit
+EOF
+
+echo "createPatch"
+createPatch -overwrite > log.CreatePatch
+
+
+echo "refineMesh"
+refineMesh -dict system/refineMeshDict2 -overwrite > log.refineMesh2
+
+echo "setSet"
+setSet -constant > log.setSet2 << EOF
+cellSet refineCell1 new boxToCell (1.499 3.279 -0.001) (2.101 3.721 1.701)
+quit
+EOF
+
+echo "refineMesh"
+refineMesh -dict system/refineMeshDict1 -overwrite > log.refineMesh1
+
+#echo "surfaceFeatureExtract"
+#surfaceFeatureExtract > log.feaure
+
+echo "snappyHexMesh"
+snappyHexMesh -overwrite > log.snappy
+
+
+#echo "renumberMesh"
+#renumberMesh -overwrite > log.renumber
+
+echo "setZone"
+./setZone
+
+echo "checkMesh"
+checkMesh > log.checkMesh
+
+echo "End of mesh"
+
+COMMENTOUT
