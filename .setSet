@@ -1,6 +1,0 @@
-cellSet aircon new boxToCell (-0.001 3.999 -0.001) (0.501 4.501 0.101)
-cellSet aircon invert
-quit
-faceSet inlet new boxToFace (0.499 3.999 -0.001) (0.501 4.251 0.101)
-faceSet outlet new boxToFace (-0.001 4.449 -0.001) (0.501 4.501 0.101)
-quit
