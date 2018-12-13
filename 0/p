@@ -50,6 +50,14 @@ boundaryField
     {
         type            zeroGradient;
     }
+    glass1
+    {
+        type            zeroGradient;
+    }
+    glass2
+    {
+        type            zeroGradient;
+    }
 }
 
 

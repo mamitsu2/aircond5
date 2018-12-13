@@ -15,7 +15,7 @@ faceSet glass2 new boxToFace (10 1.5 0) (10 3 0.1)
 EOF
 
 echo "createPatch"
-createPatch -dict createPatchDict1 -overwrite > log.CreatePatch
+createPatch -dict system/createPatchDict1 -overwrite > log.CreatePatch
 
 
 echo "setSet"
@@ -52,7 +52,7 @@ EOF
 
 
 echo "createPatch"
-createPatch -dict createPatchDict2 -overwrite > log.CreatePatch
+createPatch -dict system/createPatchDict2 -overwrite > log.CreatePatch
 
 # 境界条件にinletを追加
 echo "inlet_plus"

@@ -53,6 +53,20 @@ boundaryField
     {
         type            empty;
     }
+    glass1
+    {
+        type            greyDiffusiveRadiation;
+        emissivityMode  lookup;
+        emissivity      uniform 0.9;
+        value           uniform 0;
+    }
+    glass2
+    {
+        type            greyDiffusiveRadiation;
+        emissivityMode  lookup;
+        emissivity      uniform 0.9;
+        value           uniform 0;
+    }
 }
 
 

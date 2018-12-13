@@ -10,6 +10,7 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
+    location    "0";
     object      T;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -23,42 +24,29 @@ boundaryField
     floor
     {
         type            wallHeatTransfer;
-        Tinf            uniform 301;  // 外部温度
-        alphaWall       uniform 0.36;  // 熱伝達係数
+        Tinf            uniform 301;
+        alphaWall       uniform 0.36;
         value           uniform 300;
-        
-        //type            zeroGradient;
     }
     ceiling
     {
         type            wallHeatTransfer;
-        Tinf            uniform 301;  // 外部温度
-        alphaWall       uniform 0.36;  // 熱伝達係数
+        Tinf            uniform 301;
+        alphaWall       uniform 0.36;
         value           uniform 300;
-        
-        //type            zeroGradient;
-    }
-    nWall
-    {
-        type            wallHeatTransfer;
-        Tinf            uniform 305.6;
-        alphaWall       uniform 0.54;
-        value           uniform 300;
-        
-        //type            zeroGradient;
     }
     sWall
     {
         type            wallHeatTransfer;
         Tinf            uniform 313.2;
         alphaWall       uniform 0.54;
-        value           uniform 300; 
+        value           uniform 300;
     }
-    "(glass1|glass2)"
+    nWall
     {
-        type            wallHeatTransfer
-        Tinf            uniform 301.5;   // 外部温度
-        alphaWall       uniform 4.3;   // 熱伝達係数
+        type            wallHeatTransfer;
+        Tinf            uniform 305.6;
+        alphaWall       uniform 0.54;
         value           uniform 300;
     }
     sideWalls
@@ -74,6 +62,19 @@ boundaryField
         type            fixedValue;
         value           uniform 298.15;
     }
+    glass1
+    {
+        type            wallHeatTransfer;
+        alphaWall       uniform 4.3;
+        value           uniform 300;
+    }
+    glass2
+    {
+        type            wallHeatTransfer;
+        alphaWall       uniform 4.3;
+        value           uniform 300;
+    }
 }
+
 
 // ************************************************************************* //

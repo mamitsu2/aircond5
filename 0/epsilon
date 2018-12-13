@@ -66,6 +66,22 @@ boundaryField
         type            fixedValue;
         value           uniform 0.00082175;
     }
+    glass1
+    {
+        type            epsilonWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        value           uniform 0.01;
+    }
+    glass2
+    {
+        type            epsilonWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        value           uniform 0.01;
+    }
 }
 
 

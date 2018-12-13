@@ -49,22 +49,22 @@ pointSync false;
 patches
 (
     {
-        name glass1;
+        name inlet;
         patchInfo
         {
-            type wall;
+            type patch;
         }
         constructFrom set;
-        set glass1;
+        set inlet;
     }
     {
-        name glass2;
+        name outlet;
         patchInfo
         {
-            type wall;
+            type patch;
         }
         constructFrom set;
-        set glass2;
+        set outlet;
     }
 );
 

@@ -53,7 +53,14 @@ boundaryField
         Tinf            uniform 313.2;
         alphaWall       uniform 0.54;
         value           uniform 300; 
-    } 
+    }
+    "(glass1|glass2)"
+    {
+        type            wallHeatTransfer
+        Tinf            uniform 301.5;   // 外部温度
+        alphaWall       uniform 4.3;   // 熱伝達係数
+        value           uniform 300;
+    }
     sideWalls
     {
         type            empty;

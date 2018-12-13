@@ -50,6 +50,14 @@ boundaryField
         type            fixedValue;
         value           uniform (0.1 -0.1 0);
     }
+    glass1
+    {
+        type            noSlip;
+    }
+    glass2
+    {
+        type            noSlip;
+    }
 }
 
 
