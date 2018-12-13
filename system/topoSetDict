@@ -21,11 +21,11 @@ actions
     {
         name    Table;
         type    faceSet;
-        action  delete;
+        action  new;
         source  boxToFace;
         sourceInfo
         {
-            box (0.599 0.049 -0.001)(1.001 0.051 0.101);
+            box (2.999 0.749 -0.001)(5.001 0.751 0.101);
         }
     }
 

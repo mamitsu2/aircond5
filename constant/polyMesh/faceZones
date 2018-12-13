@@ -20,8 +20,48 @@ FoamFile
 Table
 {
     type faceZone;
-faceLabels      0();
-flipMap         0();
+faceLabels      List<label> 
+16
+(
+3235
+3236
+3237
+3238
+3239
+3240
+3241
+3242
+3243
+3244
+3245
+3246
+3247
+3248
+3249
+3250
+)
+;
+flipMap         List<bool> 
+16
+(
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+)
+;
 }
 )
 

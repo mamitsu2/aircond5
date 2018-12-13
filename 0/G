@@ -69,13 +69,19 @@ boundaryField
     }
     Table_master
     {
-        type            calculated;
-        value           nonuniform 0();
+        type            greyDiffusiveRadiation;
+        emissivityMode  lookup;
+        emissivity      uniform 0.9;
+        coupleGroup     Table;
+        value           uniform 0;
     }
     Table_slave
     {
-        type            calculated;
-        value           nonuniform 0();
+        type            greyDiffusiveRadiation;
+        emissivityMode  lookup;
+        emissivity      uniform 0.9;
+        coupleGroup     Table;
+        value           uniform 0;
     }
 }
 

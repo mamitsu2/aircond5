@@ -90,7 +90,7 @@ boundaryField
         kappa           0.41;
         E               9.8;
         coupleGroup     Table;
-        value           nonuniform 0();
+        value           uniform 0;
     }
     Table_slave
     {
@@ -99,7 +99,7 @@ boundaryField
         kappa           0.41;
         E               9.8;
         coupleGroup     Table;
-        value           nonuniform 0();
+        value           uniform 0;
     }
 }
 

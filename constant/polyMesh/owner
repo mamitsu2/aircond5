@@ -10,14 +10,14 @@ FoamFile
     version     2.0;
     format      ascii;
     class       labelList;
-    note        "nPoints:1718  nCells:796  nFaces:3246  nInternalFaces:1530";
+    note        "nPoints:1718  nCells:796  nFaces:3254  nInternalFaces:1522";
     location    "constant/polyMesh";
     object      owner;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 
-3246
+3254
 (
 0
 0
@@ -123,20 +123,12 @@ FoamFile
 51
 51
 52
-52
-53
 53
 54
-54
-55
 55
 56
-56
-57
 57
 58
-58
-59
 59
 60
 60
@@ -3262,6 +3254,22 @@ FoamFile
 399
 439
 479
+52
+53
+54
+55
+56
+57
+58
+59
+92
+93
+94
+95
+96
+97
+98
+99
 640
 716
 717

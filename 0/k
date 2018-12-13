@@ -68,13 +68,13 @@ boundaryField
     {
         type            kqRWallFunction;
         coupleGroup     Table;
-        value           nonuniform 0();
+        value           uniform 0.1;
     }
     Table_slave
     {
         type            kqRWallFunction;
         coupleGroup     Table;
-        value           nonuniform 0();
+        value           uniform 0.1;
     }
 }
 

@@ -66,13 +66,15 @@ boundaryField
     }
     Table_master
     {
-        type            calculated;
-        value           nonuniform 0();
+        type            compressible::alphatWallFunction;
+        coupleGroup     Table;
+        value           uniform 0;
     }
     Table_slave
     {
-        type            calculated;
-        value           nonuniform 0();
+        type            compressible::alphatWallFunction;
+        coupleGroup     Table;
+        value           uniform 0;
     }
 }
 

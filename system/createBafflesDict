@@ -36,6 +36,11 @@ baffles
 
             patchFields
             {
+                alphat
+                {
+                    type            compressible::alphatWallFunction;
+                    value           uniform 0;
+                }
                 epsilon
                 {
                     type            epsilonWallFunction;
@@ -44,10 +49,24 @@ baffles
                     E               9.8;
                     value           uniform 0;
                 }
+                G
+                {
+                    type            greyDiffusiveRadiation;
+                    value           uniform 0;
+                    emissivityMode  lookup;
+                    emissivity      uniform 0.9;
+                }
+                IDefault
+                {
+                    type            greyDiffusiveRadiation;
+                    emissivityMode  lookup;
+                    emissivity      uniform 0.9;
+                    value           uniform 0;
+                }
                 k
                 {
                     type            kqRWallFunction;
-                    value           uniform 0;
+                    value           uniform 0.1;
                 }
                 nut
                 {
@@ -61,10 +80,17 @@ baffles
                 {
                     type            zeroGradient;
                 }
+                p_rgh
+                {
+                    type            zeroGradient;
+                }
+                T
+                {
+                    type            zeroGradient;
+                }
                 U
                 {
-                    type            fixedValue;
-                    value           uniform (0 0 0);
+                    type            noSlip;
                 }
             }
         }

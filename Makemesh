@@ -10,12 +10,15 @@ blockMesh > log.blockMesh
 
 echo "setSet"
 setSet -constant > log.Setset << EOF
-faceSet glass1 new boxToFace (0 1.5 0) (0 3 0.1)
-faceSet glass2 new boxToFace (10 1.5 0) (10 3 0.1)
+faceSet glass1 new boxToFace (-0.001 1.499 -0.001) (0.001 3.001 0.101)
+faceSet glass2 new boxToFace (9.999 1.499 -0.001) (10.001 3.001 0.101)
 EOF
 
 echo "createPatch"
 createPatch -dict system/createPatchDict1 -overwrite > log.CreatePatch
+ 
+echo "topoSet"
+topoSet > log.CreateBaffles
 
 echo "createBaffles"
 createBaffles -overwrite > log.CreateBaffles

@@ -8,9 +8,9 @@
 Build  : 6-1a0c91b3baa8
 Exec   : setSet -constant
 Date   : Dec 13 2018
-Time   : 16:57:38
+Time   : 17:43:08
 Host   : "mmt3264-MacBookPro"
-PID    : 8542
+PID    : 16339
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5
 nProcs : 1
@@ -23,14 +23,15 @@ Create time
 
 Create polyMesh for time = constant
 
-Time:constant  cells:796  faces:3246  points:1718  patches:9  bb:(0 0 0) (10 5 0.1)
+Time:constant  cells:796  faces:3254  points:1718  patches:9  bb:(0 0 0) (10 5 0.1)
 cellSets:
 	aircon	size:796
 faceSets:
 	glass2	size:6
 	glass1	size:6
+	Table	size:8
 faceZones:
-	Table	size:0
+	Table	size:16
 
 Successfully read history from .setSet
 Time = constant

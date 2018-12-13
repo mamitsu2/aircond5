@@ -1,5 +1,5 @@
-faceSet glass1 new boxToFace (0 1.5 0) (0 3 0.1)
-faceSet glass2 new boxToFace (10 1.5 0) (10 3 0.1)
+faceSet glass1 new boxToFace (-0.001 1.499 -0.001) (0.001 3.001 0.101)
+faceSet glass2 new boxToFace (9.999 1.499 -0.001) (10.001 3.001 0.101)
 cellSet aircon new boxToCell (-0.001 3.999 -0.001) (0.501 4.501 0.101)
 cellSet aircon invert
 quit
