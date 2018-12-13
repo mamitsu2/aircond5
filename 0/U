@@ -58,6 +58,16 @@ boundaryField
     {
         type            noSlip;
     }
+    Table_master
+    {
+        type            fixedValue;
+        value           nonuniform 0();
+    }
+    Table_slave
+    {
+        type            fixedValue;
+        value           nonuniform 0();
+    }
 }
 
 

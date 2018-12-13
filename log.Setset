@@ -5,14 +5,14 @@
     \\  /    A nd           | Version:  6
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
-Build  : 6-d3fd147e6c65
+Build  : 6-1a0c91b3baa8
 Exec   : setSet -constant
-Date   : Dec 12 2018
-Time   : 11:39:20
-Host   : "mamitsu-desktop"
-PID    : 12627
+Date   : Dec 13 2018
+Time   : 16:57:38
+Host   : "mmt3264-MacBookPro"
+PID    : 8542
 I/O    : uncollated
-Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
+Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
@@ -23,12 +23,14 @@ Create time
 
 Create polyMesh for time = constant
 
-Time:constant  cells:796  faces:3246  points:1718  patches:7  bb:(0 0 0) (10 5 0.1)
+Time:constant  cells:796  faces:3246  points:1718  patches:9  bb:(0 0 0) (10 5 0.1)
 cellSets:
 	aircon	size:796
 faceSets:
 	glass2	size:6
 	glass1	size:6
+faceZones:
+	Table	size:0
 
 Successfully read history from .setSet
 Time = constant

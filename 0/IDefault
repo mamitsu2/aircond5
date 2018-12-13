@@ -67,6 +67,16 @@ boundaryField
         emissivity      uniform 0.9;
         value           uniform 0;
     }
+    Table_master
+    {
+        type            calculated;
+        value           nonuniform 0();
+    }
+    Table_slave
+    {
+        type            calculated;
+        value           nonuniform 0();
+    }
 }
 
 

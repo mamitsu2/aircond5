@@ -58,6 +58,16 @@ boundaryField
     {
         type            zeroGradient;
     }
+    Table_master
+    {
+        type            calculated;
+        value           nonuniform 0();
+    }
+    Table_slave
+    {
+        type            calculated;
+        value           nonuniform 0();
+    }
 }
 
 

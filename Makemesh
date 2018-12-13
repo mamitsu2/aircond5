@@ -17,6 +17,9 @@ EOF
 echo "createPatch"
 createPatch -dict system/createPatchDict1 -overwrite > log.CreatePatch
 
+echo "createBaffles"
+createBaffles -overwrite > log.CreateBaffles
+
 
 echo "setSet"
 setSet -constant > log.Setset  << EOF

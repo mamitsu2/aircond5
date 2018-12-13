@@ -5,14 +5,14 @@
     \\  /    A nd           | Version:  6
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
-Build  : 6-d3fd147e6c65
+Build  : 6-1a0c91b3baa8
 Exec   : blockMesh
-Date   : Dec 12 2018
-Time   : 11:39:20
-Host   : "mamitsu-desktop"
-PID    : 12622
+Date   : Dec 13 2018
+Time   : 16:57:38
+Host   : "mmt3264-MacBookPro"
+PID    : 8536
 I/O    : uncollated
-Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
+Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
@@ -22,7 +22,7 @@ allowSystemOperations : Allowing user-supplied system call operations
 Create time
 
 Creating block mesh from
-    "/home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5/system/blockMeshDict"
+    "/home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/system/blockMeshDict"
 Creating block edges
 No non-planar block faces defined
 Creating topology blocks

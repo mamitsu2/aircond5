@@ -83,6 +83,24 @@ boundaryField
         E               9.8;
         value           uniform 0;
     }
+    Table_master
+    {
+        type            nutkWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        coupleGroup     Table;
+        value           nonuniform 0();
+    }
+    Table_slave
+    {
+        type            nutkWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        coupleGroup     Table;
+        value           nonuniform 0();
+    }
 }
 
 

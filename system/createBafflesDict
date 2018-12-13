@@ -24,11 +24,11 @@ fields true;
 // Baffles to create.
 baffles
 {
-    baffleFaces
+    Table
     {
         //- Use predefined faceZone to select faces and orientation.
         type        faceZone;
-        zoneName    baffleFaces;
+        zoneName    Table;
 
         patchPairs
         {
@@ -57,10 +57,6 @@ baffles
                     E               9.8;
                     value           uniform 0;
                 }
-                nuTilda
-                {
-                    type            zeroGradient;
-                }
                 p
                 {
                     type            zeroGradient;
@@ -75,7 +71,7 @@ baffles
     }
 
 
-
+    /*
     cyclicFaces
     {
         //- Select faces and orientation through a searchableSurface
@@ -103,6 +99,7 @@ baffles
             }
         }
     }
+    */
 }
 
 

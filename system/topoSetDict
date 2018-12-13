@@ -17,6 +17,29 @@ FoamFile
 
 actions
 (
+
+    {
+        name    Table;
+        type    faceSet;
+        action  delete;
+        source  boxToFace;
+        sourceInfo
+        {
+            box (0.599 0.049 -0.001)(1.001 0.051 0.101);
+        }
+    }
+
+    {
+        name    Table;
+        type    faceZoneSet;
+        action  new;
+        source  setToFaceZone;
+        sourceInfo
+        {
+            faceSet Table;
+        }
+    }
+    /*
     {
         name    cyclicFacesFaceSet;
         type    faceSet;
@@ -50,7 +73,7 @@ actions
             cellSet cyclicFacesSlaveCells;
         }
     }
-
+    
     {
         name    baffleFaceSet;
         type    faceSet;
@@ -83,6 +106,7 @@ actions
             faceSet baffleFaceSet;
         }
     }
+    */
 );
 
 // ************************************************************************* //

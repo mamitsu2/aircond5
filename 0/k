@@ -64,6 +64,18 @@ boundaryField
         type            kqRWallFunction;
         value           uniform 0.1;
     }
+    Table_master
+    {
+        type            kqRWallFunction;
+        coupleGroup     Table;
+        value           nonuniform 0();
+    }
+    Table_slave
+    {
+        type            kqRWallFunction;
+        coupleGroup     Table;
+        value           nonuniform 0();
+    }
 }
 
 

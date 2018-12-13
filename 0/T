@@ -65,14 +65,26 @@ boundaryField
     glass1
     {
         type            wallHeatTransfer;
+        Tinf            uniform 301.5;
         alphaWall       uniform 4.3;
         value           uniform 300;
     }
     glass2
     {
         type            wallHeatTransfer;
+        Tinf            uniform 301.5;
         alphaWall       uniform 4.3;
         value           uniform 300;
+    }
+    Table_master
+    {
+        type            calculated;
+        value           nonuniform 0();
+    }
+    Table_slave
+    {
+        type            calculated;
+        value           nonuniform 0();
     }
 }
 
