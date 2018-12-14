@@ -21,50 +21,50 @@ FoamFile
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          40;
-        startFace       1522;
+        nFaces          56;
+        startFace       1434;
     }
     ceiling
     {
         type            wall;
         inGroups        1(wall);
         nFaces          43;
-        startFace       1562;
+        startFace       1490;
     }
     sWall
     {
         type            wall;
         inGroups        1(wall);
         nFaces          12;
-        startFace       1605;
+        startFace       1533;
     }
     nWall
     {
         type            wall;
         inGroups        1(wall);
         nFaces          14;
-        startFace       1617;
+        startFace       1545;
     }
     sideWalls
     {
         type            empty;
         inGroups        1(empty);
-        nFaces          1592;
-        startFace       1631;
+        nFaces          1512;
+        startFace       1559;
     }
     glass1
     {
         type            wall;
         inGroups        1(wall);
         nFaces          6;
-        startFace       3223;
+        startFace       3071;
     }
     glass2
     {
         type            wall;
         inGroups        1(wall);
         nFaces          6;
-        startFace       3229;
+        startFace       3077;
     }
     Table_master
     {
@@ -77,7 +77,7 @@ Table
 )
 ;
         nFaces          8;
-        startFace       3235;
+        startFace       3083;
     }
     Table_slave
     {
@@ -90,19 +90,19 @@ Table
 )
 ;
         nFaces          8;
-        startFace       3243;
+        startFace       3091;
     }
     inlet
     {
         type            patch;
         nFaces          1;
-        startFace       3251;
+        startFace       3099;
     }
     outlet
     {
         type            patch;
         nFaces          2;
-        startFace       3252;
+        startFace       3100;
     }
 )
 

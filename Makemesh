@@ -14,9 +14,32 @@ faceSet glass1 new boxToFace (-0.001 1.499 -0.001) (0.001 3.001 0.101)
 faceSet glass2 new boxToFace (9.999 1.499 -0.001) (10.001 3.001 0.101)
 EOF
 
+
 echo "createPatch"
 createPatch -dict system/createPatchDict1 -overwrite > log.CreatePatch
- 
+
+echo "setSet"
+setSet -constant > log.Setset  << EOF
+cellSet kitchen new boxToCell (6.999 -0.001 -0.001) (8.501 1.499 0.101)
+cellSet kitchen invert
+quit
+EOF
+
+echo "subsetMesh"
+subsetMesh kitchen -overwrite -patch floor > log.subsetMesh
+
+echo "setSet"
+setSet -constant > log.Setset <<EOF
+cellSet sofa new boxToCell (3 0 0) (3.7 0.6 0.1)
+cellSet sofa delete boxToCell (3 0.3 0) (3.5 0.6 0.1)
+cellSet sofa invert
+quit
+EOF
+
+echo "subsetMesh"
+subsetMesh sofa -overwrite -patch floor > log.subsetMesh
+
+
 echo "topoSet"
 topoSet > log.CreateBaffles
 
@@ -55,8 +78,6 @@ faceSet outlet new boxToFace (-0.001 4.449 -0.001) (0.501 4.501 0.101)
 quit
 EOF
 
-
-
 echo "createPatch"
 createPatch -dict system/createPatchDict2 -overwrite > log.CreatePatch
 
@@ -80,6 +101,7 @@ python ./makeoutlet/outletnut.py ./0/nut
 python ./makeoutlet/outletk.py ./0/k
 python ./makeoutlet/outletepsilon.py ./0/epsilon
 python ./makeoutlet/outletalphat.py ./0/alphat
+
 
 
 <<COMMENT
