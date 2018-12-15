@@ -30,8 +30,8 @@ subsetMesh kitchen -overwrite -patch floor > log.subsetMesh
 
 echo "setSet"
 setSet -constant > log.Setset <<EOF
-cellSet sofa new boxToCell (3 0 0) (3.7 0.6 0.1)
-cellSet sofa delete boxToCell (3 0.3 0) (3.5 0.6 0.1)
+cellSet sofa new boxToCell (2.999 -0.001 -0.001) (3.701 0.601 0.101)
+cellSet sofa delete boxToCell (2.999 0.299 -0.001) (3.501 0.601 0.101)
 cellSet sofa invert
 quit
 EOF
@@ -41,7 +41,7 @@ subsetMesh sofa -overwrite -patch floor > log.subsetMesh
 
 echo "setSet"
 setSet -constant > log.setSet <<EOF
-cellSet refrigerator new boxToCell (7.699 -0.001 -0.001) (8.001 1.8001 0.101)
+cellSet refrigerator new boxToCell (7.699 -0.001 -0.001) (8.001 1.801 0.101)
 cellSet refrigerator invert
 quit
 EOF
