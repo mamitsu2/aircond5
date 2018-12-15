@@ -20,48 +20,8 @@ FoamFile
 Table
 {
     type faceZone;
-faceLabels      List<label> 
-16
-(
-3083
-3084
-3085
-3086
-3087
-3088
-3089
-3090
-3091
-3092
-3093
-3094
-3095
-3096
-3097
-3098
-)
-;
-flipMap         List<bool> 
-16
-(
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-1
-1
-1
-1
-1
-1
-)
-;
+faceLabels      0();
+flipMap         0();
 }
 )
 

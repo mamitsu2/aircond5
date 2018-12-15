@@ -10,8 +10,8 @@ blockMesh > log.blockMesh
 
 echo "setSet"
 setSet -constant > log.Setset << EOF
-faceSet glass1 new boxToFace (-0.001 1.499 -0.001) (0.001 3.001 0.101)
-faceSet glass2 new boxToFace (9.999 1.499 -0.001) (10.001 3.001 0.101)
+faceSet glass1 new boxToFace (-0.001 1.399 -0.001) (0.001 1.801 0.101)
+faceSet glass2 new boxToFace (7.999 -0.001 -0.001) (8.001 2.801 0.101)
 EOF
 
 
@@ -20,7 +20,7 @@ createPatch -dict system/createPatchDict1 -overwrite > log.CreatePatch
 
 echo "setSet"
 setSet -constant > log.Setset  << EOF
-cellSet kitchen new boxToCell (6.999 -0.001 -0.001) (8.501 1.499 0.101)
+cellSet kitchen new boxToCell (6.499 -0.001 -0.001) (7.001 1.001 0.101)
 cellSet kitchen invert
 quit
 EOF
@@ -39,6 +39,15 @@ EOF
 echo "subsetMesh"
 subsetMesh sofa -overwrite -patch floor > log.subsetMesh
 
+echo "setSet"
+setSet -constant > log.setSet <<EOF
+cellSet refrigerator new boxToCell (7.699 -0.001 -0.001) (8.001 1.8001 0.101)
+cellSet refrigerator invert
+quit
+EOF
+
+echo "subsetMesh"
+subsetMesh refrigerator -overwrite -patch floor > log.subsetMesh
 
 echo "topoSet"
 topoSet > log.CreateBaffles
@@ -49,7 +58,7 @@ createBaffles -overwrite > log.CreateBaffles
 
 echo "setSet"
 setSet -constant > log.Setset  << EOF
-cellSet aircon new boxToCell (-0.001 3.999 -0.001) (0.501 4.501 0.101)
+cellSet aircon new boxToCell (-0.001 2.999 -0.001) (0.401 3.401 0.101)
 cellSet aircon invert
 quit
 EOF
@@ -66,15 +75,15 @@ subsetMesh aircon -overwrite -patch ceiling > log.subsetMesh
 <<COMMENTOUT
 echo "setSet"
 setSet -constant > log.Setset  << EOF
-faceSet inlet new boxToFace (0.499 3.999 -0.001) (0.501 4.501 0.101)
+faceSet inlet new boxToFace (0.399 2.999 -0.001) (0.401 3.401 0.101)
 quit
 EOF
 COMMENTOUT
 
 echo "setSet"
 setSet -constant > log.Setset  << EOF
-faceSet inlet new boxToFace (0.499 3.999 -0.001) (0.501 4.251 0.101)
-faceSet outlet new boxToFace (-0.001 4.449 -0.001) (0.501 4.501 0.101)
+faceSet inlet new boxToFace (0.399 2.999 -0.001) (0.401 3.201 0.101)
+faceSet outlet new boxToFace (-0.001 3.349 -0.001) (0.401 3.401 0.101)
 quit
 EOF
 

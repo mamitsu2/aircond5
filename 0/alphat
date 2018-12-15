@@ -68,13 +68,13 @@ boundaryField
     {
         type            compressible::alphatWallFunction;
         coupleGroup     Table;
-        value           uniform 0;
+        value           nonuniform 0();
     }
     Table_slave
     {
         type            compressible::alphatWallFunction;
         coupleGroup     Table;
-        value           uniform 0;
+        value           nonuniform 0();
     }
 }
 

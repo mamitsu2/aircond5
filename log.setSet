@@ -10,7 +10,7 @@ Exec   : setSet -constant
 Date   : Dec 15 2018
 Time   : 11:37:51
 Host   : "mamitsu-desktop"
-PID    : 8894
+PID    : 8888
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
@@ -23,32 +23,26 @@ Create time
 
 Create polyMesh for time = constant
 
-Time:constant  cells:757  faces:3098  points:1656  patches:9  bb:(0 0 0) (8 4 0.1)
+Time:constant  cells:779  faces:3184  points:1696  patches:7  bb:(0 0 0) (8 4 0.1)
 cellSets:
 	sofa	size:779
-	aircon	size:757
 	kitchen	size:785
-	refrigerator	size:761
 faceSets:
-	Table	size:0
 	glass2	size:14
 	glass1	size:2
-faceZones:
-	Table	size:0
 
 Successfully read history from .setSet
 Time = constant
     mesh not changed.
 Please type 'help', 'quit' or a set command after prompt.
-readline>faceSet inlet new boxToFace (0.399 2.999 -0.001) (0.401 3.201 0.101)
-    Set:inlet  Size:0  Action:new
-    Adding faces with centre within boxes 1((0.399 2.999 -0.001) (0.401 3.201 0.101))
-    Writing inlet (size 1) to "constant/polyMesh/sets/inlet" and to vtk file "VTK/inlet/inlet_0.vtk"
+readline>cellSet refrigerator new boxToCell (7.699 -0.001 -0.001) (8.001 1.8001 00.101)
+    Set:refrigerator  Size:0  Action:new
+    Adding cells with center within boxes 1((7.699 -0.001 -0.001) (8.001 1.8001 0.101))
+    Writing refrigerator (size 18) to "constant/polyMesh/sets/refrigerator" and to vtk file "VTK/refrigerator/refrigerator_0.vtk"
 
-readline>faceSet outlet new boxToFace (-0.001 3.349 -0.001) (0.401 3.401 0.101)
-    Set:outlet  Size:0  Action:new
-    Adding faces with centre within boxes 1((-0.001 3.349 -0.001) (0.401 3.401 0.101))
-    Writing outlet (size 2) to "constant/polyMesh/sets/outlet" and to vtk file "VTK/outlet/outlet_0.vtk"
+readline>cellSet refrigerator invert
+    Set:refrigerator  Size:18  Action:invert
+    Writing refrigerator (size 761) to "constant/polyMesh/sets/refrigerator" and to vtk file "VTK/refrigerator/refrigerator_0.vtk"
 
 readline>quit
 Quitting ...
