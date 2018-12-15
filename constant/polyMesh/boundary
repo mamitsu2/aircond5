@@ -15,68 +15,75 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-9
+10
 (
     floor
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          65;
-        startFace       1444;
+        nFaces          42;
+        startFace       1480;
     }
     ceiling
     {
         type            wall;
         inGroups        1(wall);
         nFaces          43;
-        startFace       1509;
+        startFace       1522;
     }
     sWall
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          16;
-        startFace       1552;
+        nFaces          9;
+        startFace       1565;
     }
     nWall
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          6;
-        startFace       1568;
+        nFaces          18;
+        startFace       1574;
     }
     sideWalls
     {
         type            empty;
         inGroups        1(empty);
-        nFaces          1514;
-        startFace       1574;
+        nFaces          1550;
+        startFace       1592;
     }
     glass1
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          2;
-        startFace       3088;
+        nFaces          9;
+        startFace       3142;
     }
     glass2
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          5;
-        startFace       3090;
+        nFaces          2;
+        startFace       3151;
+    }
+    sun
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          14;
+        startFace       3153;
     }
     inlet
     {
         type            patch;
         nFaces          1;
-        startFace       3095;
+        startFace       3167;
     }
     outlet
     {
         type            patch;
         nFaces          2;
-        startFace       3096;
+        startFace       3168;
     }
 )
 

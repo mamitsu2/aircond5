@@ -64,6 +64,11 @@ boundaryField
         type            kqRWallFunction;
         value           uniform 0.1;
     }
+    sun
+    {
+        type            kqRWallFunction;
+        value           uniform 0.1;
+    }
     Table_master
     {
         type            kqRWallFunction;

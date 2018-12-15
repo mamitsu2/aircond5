@@ -76,6 +76,15 @@ boundaryField
         alphaWall       uniform 4.3;
         value           uniform 300;
     }
+    sun
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 50.4;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 300;
+    }
     Table_master
     {
         type            zeroGradient;

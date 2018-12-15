@@ -10,10 +10,10 @@ blockMesh > log.blockMesh
 
 echo "setSet"
 setSet -constant > log.Setset << EOF
-faceSet glass1 new boxToFace (-0.001 1.399 -0.001) (0.001 1.801 0.101)
-faceSet glass2 new boxToFace (7.999 -0.001 -0.001) (8.001 2.801 0.101)
+faceSet glass1 new boxToFace (-0.001 -0.001 -0.001) (0.001 1.801 0.101)
+faceSet glass2 new boxToFace (7.999 1.399 -0.001) (8.001 1.801 0.101)
+faceSet sun new boxToFace (-0.001 -0.001 -0.001) (2.799 0.001 0.101)
 EOF
-
 
 echo "createPatch"
 createPatch -dict system/createPatchDict1 -overwrite > log.CreatePatch
@@ -39,15 +39,19 @@ EOF
 echo "subsetMesh"
 subsetMesh sofa -overwrite -patch floor > log.subsetMesh
 
+
+
+<<COMMENTOUT
 echo "setSet"
 setSet -constant > log.setSet <<EOF
 cellSet refrigerator new boxToCell (7.699 -0.001 -0.001) (8.001 1.801 0.101)
 cellSet refrigerator invert
 quit
 EOF
-
 echo "subsetMesh"
 subsetMesh refrigerator -overwrite -patch floor > log.subsetMesh
+COMMENTOUT
+
 
 echo "topoSet"
 topoSet > log.CreateBaffles

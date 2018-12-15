@@ -66,6 +66,15 @@ patches
         constructFrom set;
         set glass2;
     }
+    {
+        name sun;
+        patchInfo
+        {
+            type wall;
+        }
+        constructFrom set;
+        set sun;
+    }
 );
 
 // ************************************************************************* //

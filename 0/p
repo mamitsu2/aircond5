@@ -58,6 +58,10 @@ boundaryField
     {
         type            zeroGradient;
     }
+    sun
+    {
+        type            zeroGradient;
+    }
     Table_master
     {
         type            zeroGradient;

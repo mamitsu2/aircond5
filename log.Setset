@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-d3fd147e6c65
 Exec   : setSet -constant
-Date   : Dec 15 2018
-Time   : 11:37:51
+Date   : Dec 16 2018
+Time   : 03:17:09
 Host   : "mamitsu-desktop"
-PID    : 8894
+PID    : 4674
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
@@ -23,16 +23,16 @@ Create time
 
 Create polyMesh for time = constant
 
-Time:constant  cells:757  faces:3098  points:1656  patches:9  bb:(0 0 0) (8 4 0.1)
+Time:constant  cells:775  faces:3170  points:1692  patches:10  bb:(0 0 0) (8 4 0.1)
 cellSets:
 	sofa	size:779
-	aircon	size:757
+	aircon	size:775
 	kitchen	size:785
-	refrigerator	size:761
 faceSets:
+	sun	size:14
 	Table	size:0
-	glass2	size:14
-	glass1	size:2
+	glass2	size:2
+	glass1	size:9
 faceZones:
 	Table	size:0
 

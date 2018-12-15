@@ -74,6 +74,15 @@ boundaryField
         type            fixedValue;
         value           uniform 298.15;
     }
+    sun
+    {
+        type          compressible::turbulentHeatFluxTemperature;
+        heatSource    flux;        // flux (熱流束) または power (熱量)
+        q             uniform 50.4; // 熱流束 [W/m2] または 熱量 [W]
+        kappa         fluidThermo;
+        kappaName     none;
+        value         uniform 300;
+    }
 }
 
 // ************************************************************************* //

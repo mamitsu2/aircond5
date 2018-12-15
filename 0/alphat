@@ -64,6 +64,11 @@ boundaryField
         type            compressible::alphatWallFunction;
         value           uniform 0;
     }
+    sun
+    {
+        type            compressible::alphatWallFunction;
+        value           uniform 0;
+    }
     Table_master
     {
         type            compressible::alphatWallFunction;

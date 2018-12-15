@@ -58,6 +58,10 @@ boundaryField
     {
         type            noSlip;
     }
+    sun
+    {
+        type            noSlip;
+    }
     Table_master
     {
         type            noSlip;
