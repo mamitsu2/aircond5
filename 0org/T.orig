@@ -76,12 +76,18 @@ boundaryField
     }
     sun
     {
+        type            wallHeatTransfer;
+        Tinf            uniform 301;  // 外部温度
+        alphaWall       uniform 0.36;  // 熱伝達係数
+        value           uniform 300;
+        /*
         type          compressible::turbulentHeatFluxTemperature;
         heatSource    flux;        // flux (熱流束) または power (熱量)
         q             uniform 50.4; // 熱流束 [W/m2] または 熱量 [W]
         kappa         fluidThermo;
         kappaName     none;
         value         uniform 300;
+        */
     }
 }
 
