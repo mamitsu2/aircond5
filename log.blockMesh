@@ -8,9 +8,9 @@
 Build  : 6-d3fd147e6c65
 Exec   : blockMesh
 Date   : Dec 16 2018
-Time   : 10:52:32
+Time   : 11:53:41
 Host   : "mamitsu-desktop"
-PID    : 4686
+PID    : 6672
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
