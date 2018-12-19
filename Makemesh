@@ -20,7 +20,7 @@ createPatch -dict system/createPatchDict1 -overwrite > log.CreatePatch
 
 echo "setSet"
 setSet -constant > log.Setset  << EOF
-cellSet kitchen new boxToCell (6.499 -0.001 -0.001) (7.001 1.001 0.101)
+cellSet kitchen new boxToCell (7.499 -0.001 -0.001) (8.001 0.801 0.101)
 cellSet kitchen invert
 quit
 EOF
@@ -53,8 +53,13 @@ subsetMesh refrigerator -overwrite -patch floor > log.subsetMesh
 COMMENTOUT
 
 
-echo "topoSet"
-topoSet > log.CreateBaffles
+#echo "topoSet"
+#topoSet > log.topoSet
+
+#echo "setSet"
+#setSet -constant > log.setSet <<EOF
+#FaceSet Table new boxToFace (4.599 0.749 -0.001) (6.001 0.751 0.101)
+#EOF
 
 echo "createBaffles"
 createBaffles -overwrite > log.CreateBaffles
@@ -104,6 +109,8 @@ python ./makeinlet/inletnut.py ./0/nut
 python ./makeinlet/inletk.py ./0/k
 python ./makeinlet/inletepsilon.py ./0/epsilon
 python ./makeinlet/inletalphat.py ./0/alphat
+#python ./makeinlet/inletG.py ./0/G
+#python ./makeinlet/inletG.py ./0/IDefault
 
 echo "outlet_plus"
 python ./makeoutlet/outletU.py ./0/U
@@ -114,7 +121,11 @@ python ./makeoutlet/outletnut.py ./0/nut
 python ./makeoutlet/outletk.py ./0/k
 python ./makeoutlet/outletepsilon.py ./0/epsilon
 python ./makeoutlet/outletalphat.py ./0/alphat
+#python ./makeoutlet/outletG.py ./0/G
+#python ./makeoutlet/outletG.py ./0/IDefault
 
+#echo "renumberMesh"
+#renumberMesh -overwrite > log.renumber
 
 
 <<COMMENT

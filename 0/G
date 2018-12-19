@@ -80,7 +80,7 @@ boundaryField
         emissivityMode  lookup;
         emissivity      uniform 0.9;
         coupleGroup     Table;
-        value           nonuniform 0();
+        value           uniform 0;
     }
     Table_slave
     {
@@ -88,7 +88,7 @@ boundaryField
         emissivityMode  lookup;
         emissivity      uniform 0.9;
         coupleGroup     Table;
-        value           nonuniform 0();
+        value           uniform 0;
     }
 }
 

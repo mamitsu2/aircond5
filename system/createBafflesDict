@@ -26,9 +26,16 @@ baffles
 {
     Table
     {
+        //- Select faces and orientation through a searchableSurface
+        type        searchableSurface;
+        surface     searchablePlate;
+        // (4.599 0.749 -0.001) (7.001 0.751 0.101)
+        origin      (4.8 0.64 0);
+        span        (1.8 0 0.1);
+        
         //- Use predefined faceZone to select faces and orientation.
-        type        faceZone;
-        zoneName    Table;
+        // type        faceZone;
+        // zoneName    Table;
 
         patchPairs
         {

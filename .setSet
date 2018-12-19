@@ -1,7 +1,7 @@
 faceSet glass1 new boxToFace (-0.001 -0.001 -0.001) (0.001 1.801 0.101)
 faceSet glass2 new boxToFace (7.999 1.399 -0.001) (8.001 1.801 0.101)
 faceSet sun new boxToFace (-0.001 -0.001 -0.001) (2.799 0.001 0.101)
-cellSet kitchen new boxToCell (6.499 -0.001 -0.001) (7.001 1.001 0.101)
+cellSet kitchen new boxToCell (7.499 -0.001 -0.001) (8.001 0.801 0.101)
 cellSet kitchen invert
 quit
 cellSet sofa new boxToCell (2.999 -0.001 -0.001) (3.701 0.601 0.101)

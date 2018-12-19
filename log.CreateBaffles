@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-d3fd147e6c65
 Exec   : createBaffles -overwrite
-Date   : Dec 16 2018
-Time   : 11:53:41
+Date   : Dec 19 2018
+Time   : 21:37:29
 Host   : "mamitsu-desktop"
-PID    : 6680
+PID    : 11631
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
@@ -39,8 +39,8 @@ Reading volScalarField T
 Reading volScalarField k
 Reading volScalarField epsilon
 Reading volVectorField U
-Created zone Table at index 0 with 0 faces
-Converted 0 faces into boundary faces in patches 
+Created zone Table at index 0 with 9 faces
+Converted 9 faces into boundary faces in patches 
 2
 (
 Table_master
