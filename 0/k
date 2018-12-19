@@ -45,15 +45,6 @@ boundaryField
     {
         type            empty;
     }
-    outlet
-    {
-        type            zeroGradient;
-    }
-    inlet
-    {
-        type            fixedValue;
-        value           uniform 0.00735;
-    }
     glass1
     {
         type            kqRWallFunction;
@@ -80,6 +71,15 @@ boundaryField
         type            kqRWallFunction;
         coupleGroup     Table;
         value           uniform 0.1;
+    }
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 0.00735;
+    }
+    outlet
+    {
+        type            zeroGradient;
     }
 }
 

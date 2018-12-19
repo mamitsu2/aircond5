@@ -6,11 +6,11 @@
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
 Build  : 6-d3fd147e6c65
-Exec   : createPatch -dict system/createPatchDict2 -overwrite
+Exec   : renumberMesh -overwrite
 Date   : Dec 19 2018
-Time   : 22:21:30
+Time   : 22:21:32
 Host   : "mamitsu-desktop"
-PID    : 23552
+PID    : 24556
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
@@ -21,32 +21,45 @@ allowSystemOperations : Allowing user-supplied system call operations
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 Create time
 
-Create polyMesh for time = 0
+Create mesh for time = 0
 
-Reading createPatchDict
+Mesh size: 778
+Before renumbering :
+    band           : 40
+    profile        : 28445
 
-Adding new patch inlet as patch 10 from 
-{
-    type            patch;
-}
+Using default renumberMethod.
 
-Adding new patch outlet as patch 11 from 
-{
-    type            patch;
-}
+Selecting renumberMethod CuthillMcKee
 
+Reading geometric fields
 
-Read 1 faces from faceSet inlet
-Read 2 faces from faceSet outlet
+Reading volScalarField IDefault
+Reading volScalarField alphat
+Reading volScalarField nut
+Reading volScalarField p_rgh
+Reading volScalarField G
+Reading volScalarField p
+Reading volScalarField T
+Reading volScalarField k
+Reading volScalarField epsilon
+Reading volVectorField U
 
-Doing topology modification to order faces.
+After renumbering :
+    band           : 21
+    profile        : 13060
 
-Not synchronising points.
+Writing mesh to "constant"
 
-Removing patches with no faces in them.
-
-No patches removed.
-Writing repatched mesh to 0
-
+Renumbering cellSets:
+    sofa
+    aircon
+    kitchen
+Renumbering faceSets:
+    sun
+    outlet
+    inlet
+    glass2
+    glass1
 End
 

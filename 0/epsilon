@@ -57,15 +57,6 @@ boundaryField
     {
         type            empty;
     }
-    outlet
-    {
-        type            zeroGradient;
-    }
-    inlet
-    {
-        type            fixedValue;
-        value           uniform 0.00082175;
-    }
     glass1
     {
         type            epsilonWallFunction;
@@ -107,6 +98,15 @@ boundaryField
         E               9.8;
         coupleGroup     Table;
         value           uniform 0;
+    }
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 0.00082175;
+    }
+    outlet
+    {
+        type            zeroGradient;
     }
 }
 
