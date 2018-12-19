@@ -8,9 +8,9 @@
 Build  : 6-d3fd147e6c65
 Exec   : setSet -constant
 Date   : Dec 19 2018
-Time   : 21:37:30
+Time   : 22:16:20
 Host   : "mamitsu-desktop"
-PID    : 11634
+PID    : 21936
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1

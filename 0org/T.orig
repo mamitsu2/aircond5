@@ -16,50 +16,57 @@ FoamFile
 
 dimensions      [0 0 0 1 0 0 0];
 
-internalField   uniform 300;
+internalField   uniform 306;
 
 boundaryField
 {
     floor
     {
         type            wallHeatTransfer;
-        Tinf            uniform 301;  // 外部温度
+        Tinf            uniform 305.2;  // 外部温度
         alphaWall       uniform 0.36;  // 熱伝達係数
-        value           uniform 300;
+        value           uniform 306;
         
         //type            zeroGradient;
     }
     ceiling
     {
         type            wallHeatTransfer;
-        Tinf            uniform 301;  // 外部温度
+        Tinf            uniform 301.2;  // 外部温度
         alphaWall       uniform 0.36;  // 熱伝達係数
-        value           uniform 300;
+        value           uniform 306;
         
         //type            zeroGradient;
     }
     nWall
     {
         type            wallHeatTransfer;
-        Tinf            uniform 305.6;
+        Tinf            uniform 308.2;
         alphaWall       uniform 0.54;
-        value           uniform 300;
+        value           uniform 306;
         
         //type            zeroGradient;
     }
     sWall
     {
         type            wallHeatTransfer;
-        Tinf            uniform 313.2;
+        Tinf            uniform 315.2;
         alphaWall       uniform 0.54;
-        value           uniform 300; 
+        value           uniform 306; 
     }
-    "(glass1|glass2)"
+    glass1
     {
         type            wallHeatTransfer;
-        Tinf            uniform 301.5;   // 外部温度
+        Tinf            uniform 315.2;   // 外部温度
         alphaWall       uniform 4.3;   // 熱伝達係数
-        value           uniform 300;
+        value           uniform 306;
+    }
+    glass2
+    {
+        type            wallHeatTransfer;
+        Tinf            uniform 308.2;   // 外部温度
+        alphaWall       uniform 4.3;   // 熱伝達係数
+        value           uniform 306;
     }
     sideWalls
     {
@@ -77,9 +84,9 @@ boundaryField
     sun
     {
         type            wallHeatTransfer;
-        Tinf            uniform 301;  // 外部温度
+        Tinf            uniform 305.2;  // 外部温度
         alphaWall       uniform 0.36;  // 熱伝達係数
-        value           uniform 300;
+        value           uniform 306;
         /*
         type          compressible::turbulentHeatFluxTemperature;
         heatSource    flux;        // flux (熱流束) または power (熱量)

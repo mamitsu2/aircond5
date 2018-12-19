@@ -12,10 +12,12 @@ if __name__ == '__main__':
     {
         type            empty;
     }
-    inlet
+    outlet
     {
-        type            fixedValue;
-        value           uniform (0.1 -0.1 0);
+        type            greyDiffusiveRadiation;
+        emissivityMode  lookup;
+        emissivity      uniform 0.9;
+        value           uniform 0;
     }"""
     f = open(sys.argv[1],'r')
     body = f.read()

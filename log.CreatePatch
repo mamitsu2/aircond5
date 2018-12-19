@@ -8,9 +8,9 @@
 Build  : 6-d3fd147e6c65
 Exec   : createPatch -dict system/createPatchDict2 -overwrite
 Date   : Dec 19 2018
-Time   : 21:37:30
+Time   : 22:16:20
 Host   : "mamitsu-desktop"
-PID    : 11635
+PID    : 21937
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1

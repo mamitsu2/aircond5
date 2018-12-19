@@ -56,11 +56,6 @@ COMMENTOUT
 #echo "topoSet"
 #topoSet > log.topoSet
 
-#echo "setSet"
-#setSet -constant > log.setSet <<EOF
-#FaceSet Table new boxToFace (4.599 0.749 -0.001) (6.001 0.751 0.101)
-#EOF
-
 echo "createBaffles"
 createBaffles -overwrite > log.CreateBaffles
 
@@ -109,8 +104,8 @@ python ./makeinlet/inletnut.py ./0/nut
 python ./makeinlet/inletk.py ./0/k
 python ./makeinlet/inletepsilon.py ./0/epsilon
 python ./makeinlet/inletalphat.py ./0/alphat
-#python ./makeinlet/inletG.py ./0/G
-#python ./makeinlet/inletG.py ./0/IDefault
+python ./makeinlet/inletG.py ./0/G
+python ./makeinlet/inletG.py ./0/IDefault
 
 echo "outlet_plus"
 python ./makeoutlet/outletU.py ./0/U
@@ -121,8 +116,8 @@ python ./makeoutlet/outletnut.py ./0/nut
 python ./makeoutlet/outletk.py ./0/k
 python ./makeoutlet/outletepsilon.py ./0/epsilon
 python ./makeoutlet/outletalphat.py ./0/alphat
-#python ./makeoutlet/outletG.py ./0/G
-#python ./makeoutlet/outletG.py ./0/IDefault
+python ./makeoutlet/outletG.py ./0/G
+python ./makeoutlet/outletG.py ./0/IDefault
 
 #echo "renumberMesh"
 #renumberMesh -overwrite > log.renumber
