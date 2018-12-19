@@ -1,0 +1,116 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+12
+(
+    floor
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          36;
+        startFace       1482;
+    }
+    ceiling
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          43;
+        startFace       1518;
+    }
+    sWall
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          9;
+        startFace       1561;
+    }
+    nWall
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          14;
+        startFace       1570;
+    }
+    sideWalls
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          1556;
+        startFace       1584;
+    }
+    glass1
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          9;
+        startFace       3140;
+    }
+    glass2
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3149;
+    }
+    sun
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          14;
+        startFace       3151;
+    }
+    Table_master
+    {
+        type            wall;
+        inGroups        
+2
+(
+wall
+Table
+)
+;
+        nFaces          9;
+        startFace       3165;
+    }
+    Table_slave
+    {
+        type            wall;
+        inGroups        
+2
+(
+wall
+Table
+)
+;
+        nFaces          9;
+        startFace       3174;
+    }
+    inlet
+    {
+        type            patch;
+        nFaces          1;
+        startFace       3183;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          2;
+        startFace       3184;
+    }
+)
+
+// ************************************************************************* //

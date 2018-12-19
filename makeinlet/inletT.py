@@ -15,7 +15,7 @@ if __name__ == '__main__':
     inlet
     {
         type            fixedValue;
-        value           uniform 298.15;
+        value           uniform 293.15;
     }"""
     f = open(sys.argv[1],'r')
     body = f.read()
