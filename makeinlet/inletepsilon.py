@@ -14,8 +14,9 @@ if __name__ == '__main__':
     }
     inlet
     {
-        type            fixedValue;
-        value           uniform 0.00082175;
+        type            turbulentMixingLengthDissipationRateInlet;
+        mixingLength    0.00315;  // [m]
+        value           uniform 1;
     }"""
     f = open(sys.argv[1],'r')
     body = f.read()

@@ -101,8 +101,9 @@ boundaryField
     }
     inlet
     {
-        type            fixedValue;
-        value           uniform 0.00082175;
+        type            turbulentMixingLengthDissipationRateInlet;
+        mixingLength    0.00315;
+        value           uniform 1;
     }
     outlet
     {

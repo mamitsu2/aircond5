@@ -14,8 +14,9 @@ if __name__ == '__main__':
     }
     inlet
     {
-        type            fixedValue;
-        value           uniform 0.00735;
+        type            turbulentIntensityKineticEnergyInlet;
+        intensity       0.5;  //5 %
+        value           uniform 1;
     }"""
     f = open(sys.argv[1],'r')
     body = f.read()

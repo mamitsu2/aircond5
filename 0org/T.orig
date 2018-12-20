@@ -32,7 +32,7 @@ boundaryField
     ceiling
     {
         type            wallHeatTransfer;
-        Tinf            uniform 301.2;  // 外部温度
+        Tinf            uniform 303.2;  // 外部温度
         alphaWall       uniform 0.36;  // 熱伝達係数
         value           uniform 306;
         
