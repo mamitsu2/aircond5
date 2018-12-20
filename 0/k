@@ -45,6 +45,16 @@ boundaryField
     {
         type            empty;
     }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    inlet
+    {
+        type            turbulentIntensityKineticEnergyInlet;
+        intensity       0.05;  //5 %
+        value           uniform 1;
+    }
     glass1
     {
         type            kqRWallFunction;
@@ -71,16 +81,6 @@ boundaryField
         type            kqRWallFunction;
         coupleGroup     Table;
         value           uniform 0.1;
-    }
-    inlet
-    {
-        type            turbulentIntensityKineticEnergyInlet;
-        intensity       0.5;
-        value           uniform 1;
-    }
-    outlet
-    {
-        type            zeroGradient;
     }
 }
 

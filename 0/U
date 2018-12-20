@@ -41,6 +41,15 @@ boundaryField
     {
         type            empty;
     }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    inlet
+    {
+        type            fixedValue;
+        value           uniform (0.5 0 0);
+    }
     glass1
     {
         type            noSlip;
@@ -60,15 +69,6 @@ boundaryField
     Table_slave
     {
         type            noSlip;
-    }
-    inlet
-    {
-        type            fixedValue;
-        value           uniform (0.5 0 0);
-    }
-    outlet
-    {
-        type            zeroGradient;
     }
 }
 

@@ -57,6 +57,16 @@ boundaryField
     {
         type            empty;
     }
+    outlet
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    inlet
+    {
+        type            calculated;
+        value           uniform 0;
+    }
     glass1
     {
         type            nutkWallFunction;
@@ -97,16 +107,6 @@ boundaryField
         kappa           0.41;
         E               9.8;
         coupleGroup     Table;
-        value           uniform 0;
-    }
-    inlet
-    {
-        type            calculated;
-        value           uniform 0;
-    }
-    outlet
-    {
-        type            calculated;
         value           uniform 0;
     }
 }

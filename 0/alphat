@@ -45,6 +45,15 @@ boundaryField
     {
         type            empty;
     }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 1.94e-05;
+    }
     glass1
     {
         type            compressible::alphatWallFunction;
@@ -71,15 +80,6 @@ boundaryField
         type            compressible::alphatWallFunction;
         coupleGroup     Table;
         value           uniform 0;
-    }
-    inlet
-    {
-        type            fixedValue;
-        value           uniform 1.94e-05;
-    }
-    outlet
-    {
-        type            zeroGradient;
     }
 }
 

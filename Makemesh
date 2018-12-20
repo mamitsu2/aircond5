@@ -119,8 +119,8 @@ python ./makeoutlet/outletalphat.py ./0/alphat
 python ./makeoutlet/outletG.py ./0/G
 python ./makeoutlet/outletG.py ./0/IDefault
 
-echo "renumberMesh"
-renumberMesh -overwrite > log.renumber
+#echo "renumberMesh"
+#renumberMesh -overwrite > log.renumber
 
 
 <<COMMENT

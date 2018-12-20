@@ -53,6 +53,20 @@ boundaryField
     {
         type            empty;
     }
+    outlet
+    {
+        type            greyDiffusiveRadiation;
+        emissivityMode  lookup;
+        emissivity      uniform 0.9;
+        value           uniform 0;
+    }
+    inlet
+    {
+        type            greyDiffusiveRadiation;
+        emissivityMode  lookup;
+        emissivity      uniform 0.9;
+        value           uniform 0;
+    }
     glass1
     {
         type            greyDiffusiveRadiation;
@@ -88,20 +102,6 @@ boundaryField
         emissivityMode  lookup;
         emissivity      uniform 0.9;
         coupleGroup     Table;
-        value           uniform 0;
-    }
-    inlet
-    {
-        type            greyDiffusiveRadiation;
-        emissivityMode  lookup;
-        emissivity      uniform 0.9;
-        value           uniform 0;
-    }
-    outlet
-    {
-        type            greyDiffusiveRadiation;
-        emissivityMode  lookup;
-        emissivity      uniform 0.9;
         value           uniform 0;
     }
 }

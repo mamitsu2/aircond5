@@ -53,6 +53,15 @@ boundaryField
     {
         type            empty;
     }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 293.15;
+    }
     glass1
     {
         type            wallHeatTransfer;
@@ -79,15 +88,6 @@ boundaryField
         type            zeroGradient;
     }
     Table_slave
-    {
-        type            zeroGradient;
-    }
-    inlet
-    {
-        type            fixedValue;
-        value           uniform 293.15;
-    }
-    outlet
     {
         type            zeroGradient;
     }

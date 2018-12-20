@@ -15,7 +15,7 @@ if __name__ == '__main__':
     inlet
     {
         type            turbulentIntensityKineticEnergyInlet;
-        intensity       0.5;  //5 %
+        intensity       0.05;  //5 %
         value           uniform 1;
     }"""
     f = open(sys.argv[1],'r')
