@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-d3fd147e6c65
 Exec   : blockMesh
-Date   : Dec 21 2018
-Time   : 02:55:25
+Date   : Dec 22 2018
+Time   : 00:41:31
 Host   : "mamitsu-desktop"
-PID    : 22985
+PID    : 12845
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
@@ -56,19 +56,19 @@ Writing polyMesh
 ----------------
 Mesh Information
 ----------------
-  boundingBox: (0 0 0) (8 4 0.1)
-  nPoints: 1722
-  nCells: 800
-  nFaces: 3260
-  nInternalFaces: 1540
+  boundingBox: (0 0 0) (8 2.4 0.1)
+  nPoints: 1066
+  nCells: 480
+  nFaces: 1972
+  nInternalFaces: 908
 ----------------
 Patches
 ----------------
-  patch 0 (start: 1540 size: 40) name: floor
-  patch 1 (start: 1580 size: 40) name: ceiling
-  patch 2 (start: 1620 size: 20) name: sWall
-  patch 3 (start: 1640 size: 20) name: nWall
-  patch 4 (start: 1660 size: 1600) name: sideWalls
+  patch 0 (start: 908 size: 40) name: floor
+  patch 1 (start: 948 size: 40) name: ceiling
+  patch 2 (start: 988 size: 12) name: sWall
+  patch 3 (start: 1000 size: 12) name: nWall
+  patch 4 (start: 1012 size: 960) name: sideWalls
 
 End
 
