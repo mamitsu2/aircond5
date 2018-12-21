@@ -25,28 +25,28 @@ boundaryField
     {
         type            wallHeatTransfer;
         Tinf            uniform 305.2;
-        alphaWall       uniform 0.36;
+        alphaWall       uniform 0.24;
         value           uniform 306;
     }
     ceiling
     {
         type            wallHeatTransfer;
         Tinf            uniform 303.2;
-        alphaWall       uniform 0.36;
+        alphaWall       uniform 0.24;
         value           uniform 306;
     }
     sWall
     {
         type            wallHeatTransfer;
         Tinf            uniform 315.2;
-        alphaWall       uniform 0.54;
+        alphaWall       uniform 0.36;
         value           uniform 306;
     }
     nWall
     {
         type            wallHeatTransfer;
-        Tinf            uniform 308.2;
-        alphaWall       uniform 0.54;
+        Tinf            uniform 307.2;
+        alphaWall       uniform 0.36;
         value           uniform 306;
     }
     sideWalls
@@ -72,7 +72,7 @@ boundaryField
     glass2
     {
         type            wallHeatTransfer;
-        Tinf            uniform 308.2;
+        Tinf            uniform 307.2;
         alphaWall       uniform 4.3;
         value           uniform 306;
     }
@@ -80,7 +80,7 @@ boundaryField
     {
         type            wallHeatTransfer;
         Tinf            uniform 305.2;
-        alphaWall       uniform 0.36;
+        alphaWall       uniform 0.24;
         value           uniform 306;
     }
     Table_master
