@@ -118,23 +118,20 @@ python ./makeoutlet/outletalphat.py ./0/alphat
 python ./makeoutlet/outletG.py ./0/G
 python ./makeoutlet/outletG.py ./0/IDefault
 
-#echo "renumberMesh"
-#renumberMesh -overwrite > log.renumber
 
 
-<<COMMENT
 echo "setSet"
 setSet -constant > log.setSet2 << EOF
-cellSet refineCell1 new boxToCell (1.499 3.279 -0.001) (2.101 3.721 1.701)
+cellSet refineCell new boxToCell (-0.001 1.199 -0.001) (2.401 2.401 0.101)
 quit
 EOF
 
 
 echo "refineMesh"
 refineMesh -overwrite > log.refineMesh1
-COMMENT
 
-
+#echo "renumberMesh"
+#renumberMesh -dict system/renumberMeshDict -overwrite > log.renumber
 
 
 << COMMENTOUT

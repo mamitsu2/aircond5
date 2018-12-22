@@ -6,11 +6,11 @@
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
 Build  : 6-d3fd147e6c65
-Exec   : createPatch -dict system/createPatchDict2 -overwrite
+Exec   : setSet -constant
 Date   : Dec 22 2018
-Time   : 23:53:58
+Time   : 23:53:59
 Host   : "mamitsu-desktop"
-PID    : 18654
+PID    : 19655
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
@@ -21,32 +21,32 @@ allowSystemOperations : Allowing user-supplied system call operations
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 Create time
 
-Create polyMesh for time = 0
+Create polyMesh for time = constant
 
-Reading createPatchDict
+Time:constant  cells:458  faces:1898  points:1032  patches:12  bb:(0 0 0) (8 2.4 0.1)
+cellSets:
+	sofa	size:462
+	aircon	size:458
+	kitchen	size:468
+faceSets:
+	sun	size:14
+	outlet	size:2
+	inlet	size:1
+	glass2	size:2
+	glass1	size:9
+faceZones:
+	Table	size:18
 
-Adding new patch inlet as patch 10 from 
-{
-    type            patch;
-}
+Successfully read history from .setSet
+Time = constant
+    mesh not changed.
+Please type 'help', 'quit' or a set command after prompt.
+readline>cellSet refineCell new boxToCell (-0.001 1.199 -0.001) (2.401 2.401 0.1001)
+    Set:refineCell  Size:0  Action:new
+    Adding cells with center within boxes 1((-0.001 1.199 -0.001) (2.401 2.401 0.101))
+    Writing refineCell (size 68) to "constant/polyMesh/sets/refineCell" and to vtk file "VTK/refineCell/refineCell_0.vtk"
 
-Adding new patch outlet as patch 11 from 
-{
-    type            patch;
-}
-
-
-Read 1 faces from faceSet inlet
-Read 2 faces from faceSet outlet
-
-Doing topology modification to order faces.
-
-Not synchronising points.
-
-Removing patches with no faces in them.
-
-No patches removed.
-Writing repatched mesh to 0
-
+readline>quit
+Quitting ...
 End
 

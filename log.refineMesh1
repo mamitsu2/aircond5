@@ -6,11 +6,11 @@
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
 Build  : 6-d3fd147e6c65
-Exec   : createPatch -dict system/createPatchDict2 -overwrite
+Exec   : refineMesh -overwrite
 Date   : Dec 22 2018
-Time   : 23:53:58
+Time   : 23:53:59
 Host   : "mamitsu-desktop"
-PID    : 18654
+PID    : 19656
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
@@ -23,30 +23,30 @@ Create time
 
 Create polyMesh for time = 0
 
-Reading createPatchDict
+Mesh edge statistics:
+    x aligned :  number:1000	minLen:0.2	maxLen:0.2
+    y aligned :  number:946	minLen:0.2	maxLen:0.2
+    z aligned :  number:516	minLen:0.1	maxLen:0.1
+    other     :  number:0	minLen:4.5036e+15	maxLen:-4.5036e+15
 
-Adding new patch inlet as patch 10 from 
-{
-    type            patch;
-}
+Refining according to refineMeshDict
 
-Adding new patch outlet as patch 11 from 
-{
-    type            patch;
-}
+Read 68 cells from cellSet "constant/polyMesh/sets/refineCell"
 
+Global Coordinate system:
+     normal : (0 0 1)
+     tan1   : (1 0 0)
+     tan2   : (0 1 0)
 
-Read 1 faces from faceSet inlet
-Read 2 faces from faceSet outlet
+Writing refined cells (272) to cellSet "constant/polyMesh/sets/refinedCells"
 
-Doing topology modification to order faces.
+Writing map from new to old cell to "/home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5/0/polyMesh/cellMap"
 
-Not synchronising points.
-
-Removing patches with no faces in them.
-
-No patches removed.
-Writing repatched mesh to 0
+Mesh edge statistics:
+    x aligned :  number:1436	minLen:0.1	maxLen:0.2
+    y aligned :  number:1366	minLen:0.1	maxLen:0.2
+    z aligned :  number:740	minLen:0.1	maxLen:0.1
+    other     :  number:0	minLen:4.5036e+15	maxLen:-4.5036e+15
 
 End
 

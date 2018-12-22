@@ -22,56 +22,56 @@ FoamFile
         type            wall;
         inGroups        1(wall);
         nFaces          36;
-        startFace       850;
+        startFace       1256;
     }
     ceiling
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          43;
-        startFace       886;
+        nFaces          58;
+        startFace       1292;
     }
     sWall
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          2;
-        startFace       929;
+        nFaces          4;
+        startFace       1350;
     }
     nWall
     {
         type            wall;
         inGroups        1(wall);
         nFaces          6;
-        startFace       931;
+        startFace       1354;
     }
     sideWalls
     {
         type            empty;
         inGroups        1(empty);
-        nFaces          916;
-        startFace       937;
+        nFaces          1324;
+        startFace       1360;
     }
     glass1
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          8;
-        startFace       1853;
+        nFaces          10;
+        startFace       2684;
     }
     glass2
     {
         type            wall;
         inGroups        1(wall);
         nFaces          2;
-        startFace       1861;
+        startFace       2694;
     }
     sun
     {
         type            wall;
         inGroups        1(wall);
         nFaces          14;
-        startFace       1863;
+        startFace       2696;
     }
     Table_master
     {
@@ -84,7 +84,7 @@ Table
 )
 ;
         nFaces          9;
-        startFace       1877;
+        startFace       2710;
     }
     Table_slave
     {
@@ -97,19 +97,19 @@ Table
 )
 ;
         nFaces          9;
-        startFace       1886;
+        startFace       2719;
     }
     inlet
     {
         type            patch;
-        nFaces          1;
-        startFace       1895;
+        nFaces          2;
+        startFace       2728;
     }
     outlet
     {
         type            patch;
-        nFaces          2;
-        startFace       1896;
+        nFaces          4;
+        startFace       2730;
     }
 )
 
