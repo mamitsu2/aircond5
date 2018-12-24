@@ -61,7 +61,7 @@ createBaffles -overwrite > log.CreateBaffles
 
 echo "setSet"
 setSet -constant > log.Setset  << EOF
-cellSet aircon new boxToCell (-0.001 1.599 -0.001) (0.401 2.001 0.101)
+cellSet aircon new boxToCell (-0.001 1.799 -0.001) (0.401 2.201 0.101)
 cellSet aircon invert
 quit
 EOF
@@ -85,8 +85,8 @@ COMMENTOUT
 
 echo "setSet"
 setSet -constant > log.Setset  << EOF
-faceSet inlet new boxToFace (0.399 1.599 -0.001) (0.401 1.801 0.101)
-faceSet outlet new boxToFace (-0.001 1.999 -0.001) (0.401 2.001 0.101)
+faceSet inlet new boxToFace (0.399 1.799 -0.001) (0.401 2.001 0.101)
+faceSet outlet new boxToFace (-0.001 2.199 -0.001) (0.401 2.201 0.101)
 quit
 EOF
 
@@ -119,7 +119,7 @@ python ./makeoutlet/outletG.py ./0/G
 python ./makeoutlet/outletG.py ./0/IDefault
 
 
-
+<<COMMENTOUT
 echo "setSet"
 setSet -constant > log.setSet2 << EOF
 cellSet refineCell new boxToCell (-0.001 1.199 -0.001) (2.401 2.401 0.101)
@@ -129,6 +129,7 @@ EOF
 
 echo "refineMesh"
 refineMesh -overwrite > log.refineMesh1
+COMMENTOUT
 
 #echo "renumberMesh"
 #renumberMesh -dict system/renumberMeshDict -overwrite > log.renumber
