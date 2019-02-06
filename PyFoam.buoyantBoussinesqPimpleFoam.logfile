@@ -5,14 +5,14 @@
     \\  /    A nd           | Version:  6
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
-Build  : 6-1a0c91b3baa8
-Exec   : buoyantBoussinesqPimpleFoam -case /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond4
-Date   : Dec 02 2018
-Time   : 01:29:25
-Host   : "mmt3264-MacBookPro"
-PID    : 11412
+Build  : 6-f934eabb0d52
+Exec   : buoyantBoussinesqPimpleFoam -case /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
+Date   : Jan 13 2019
+Time   : 06:47:31
+Host   : "mamitsu-desktop"
+PID    : 22323
 I/O    : uncollated
-Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond4
+Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
@@ -42,7 +42,7 @@ Reading/calculating face flux field phi
 
 
 --> FOAM FATAL ERROR:
-cannot find file "/home/mmt3264/OpenFOAM/mmt3264-6/run/aircond4/constant/transportProperties"
+cannot find file "/home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5/constant/transportProperties"
 
     From function virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 519.

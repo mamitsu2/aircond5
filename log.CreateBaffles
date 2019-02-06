@@ -5,12 +5,12 @@
     \\  /    A nd           | Version:  6
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
-Build  : 6-d3fd147e6c65
+Build  : 6-f934eabb0d52
 Exec   : createBaffles -overwrite
-Date   : Dec 24 2018
-Time   : 00:07:15
+Date   : Feb 05 2019
+Time   : 21:52:16
 Host   : "mamitsu-desktop"
-PID    : 13303
+PID    : 5801
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
