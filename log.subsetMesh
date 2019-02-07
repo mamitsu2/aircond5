@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-f934eabb0d52
 Exec   : subsetMesh aircon -overwrite -patch ceiling
-Date   : Feb 05 2019
-Time   : 21:52:16
+Date   : Feb 06 2019
+Time   : 23:24:33
 Host   : "mamitsu-desktop"
-PID    : 5803
+PID    : 11649
 I/O    : uncollated
 Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
 nProcs : 1
