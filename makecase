@@ -1,9 +1,11 @@
 #!/bin/bash
 # ケースファイルを多量に作成する
+cd `dirname $0`
 rm -rf ./Case
-mkdir ./Case
 rm -rf ../tmpfolder
 cp -r . ../tmpfolder
+mkdir ./Case
+
 RENGE=$(( $1-1 ))
 for i in `seq 0 $RENGE`
 do 

@@ -5,14 +5,14 @@
     \\  /    A nd           | Version:  6
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
-Build  : 6-f934eabb0d52
+Build  : 6-1a0c91b3baa8
 Exec   : setSet -constant
-Date   : Feb 06 2019
-Time   : 23:24:33
-Host   : "mamitsu-desktop"
-PID    : 11650
+Date   : Feb 08 2019
+Time   : 04:05:49
+Host   : "mmt3264-MacBookPro"
+PID    : 22785
 I/O    : uncollated
-Case   : /home/mamitsu/OpenFOAM/mamitsu-6/run/aircond5
+Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
