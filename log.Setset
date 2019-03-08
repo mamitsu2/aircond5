@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-1a0c91b3baa8
 Exec   : setSet -constant
-Date   : Feb 08 2019
-Time   : 04:05:49
+Date   : Feb 28 2019
+Time   : 18:14:51
 Host   : "mmt3264-MacBookPro"
-PID    : 22785
+PID    : 26925
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5
 nProcs : 1
@@ -39,12 +39,12 @@ Successfully read history from .setSet
 Time = constant
     mesh not changed.
 Please type 'help', 'quit' or a set command after prompt.
-readline>faceSet inlet new boxToFace (0.399 1.799 -0.001) (0.401 2.001 0.101)
+readline>faceSet inlet new boxToFace (0.399 1.799 -0.001) ((0.401 2.001 0.101)
     Set:inlet  Size:0  Action:new
     Adding faces with centre within boxes 1((0.399 1.799 -0.001) (0.401 2.001 0.101))
     Writing inlet (size 1) to "constant/polyMesh/sets/inlet" and to vtk file "VTK/inlet/inlet_0.vtk"
 
-readline>faceSet outlet new boxToFace (-0.001 2.199 -0.001) (0.401 2.201 0.101)
+readline>faceSet outlet new boxToFace (-0.001 2.199 -0.001)) (0.401 2.201 0.101)
     Set:outlet  Size:0  Action:new
     Adding faces with centre within boxes 1((-0.001 2.199 -0.001) (0.401 2.201 0.101))
     Writing outlet (size 2) to "constant/polyMesh/sets/outlet" and to vtk file "VTK/outlet/outlet_0.vtk"
