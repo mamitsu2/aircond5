@@ -1,6 +1,5 @@
 #!/bin/bash
 # ケースファイルを多量に作成する
-# ファイルはoriginからコピーする。
 cd `dirname $0`
 rm -rf ./$2
 rm -rf ../tmpfolder
