@@ -1,0 +1,19 @@
+#!/bin/bash
+# 現在のフォルダからoriginを作成する。
+cd `dirname $0`
+TMP=tmpfolder
+ORIG=origin2
+rm -rf ./$ORIG
+rm -rf ../$TMP
+cp -r . ../$TMP
+
+cp -r ../tmpfolder ./$ORIG
+# originから色々と削除していく
+cd ./$ORIG
+# rfオプションだけ別で実行
+rm -rf ./.git
+rm -rf ./.ipynb_checkpoints
+# 他のファイルはまとめて消す
+ls | grep -v -E '0|0org|All^|make^|Makemesh|system|constant|refine^|md$' | xrags rm -r
+
+rm -rf ../../$TMP
