@@ -2,7 +2,7 @@
 # 現在のフォルダからoriginを作成する。
 cd `dirname $0`
 TMP=tmpfolder
-ORIG=origin2
+ORIG=origin
 rm -rf ./$ORIG
 rm -rf ../$TMP
 cp -r . ../$TMP
@@ -14,6 +14,8 @@ cd ./$ORIG
 rm -rf ./.git
 rm -rf ./.ipynb_checkpoints
 # 他のファイルはまとめて消す
-ls | grep -v -E '0|0org|All^|make^|Makemesh|system|constant|refine^|md$' | xrags rm -r
+ls | grep -v -E '0|0org|constant|makeinlet|makeoutlet|system|Allclean|Allrun|makecase|Makemesh|refineMeshDict1|refineMeshDict2' | xargs rm -r
+
+ls | grep -E 'ipynb|png|pth' | xargs rm
 
 rm -rf ../../$TMP
