@@ -1,0 +1,25 @@
+
+// sinで変化する系。
+// inletが正方向と負方向に周期的に変化していた。
+    inlet
+    {
+        type            codedFixedValue;
+        value           uniform (8.95209e-09 0 0);
+        name            sineVelocity;
+        code            #{
+            fvPatchField<vector> f(
+                patch().lookupPatchField<volVectorField, vector>("U")
+            );
+
+            const scalar t = this->db().time().timeOutputValue();
+            const scalar pi = constant::mathematical::pi;
+
+            forAll(patch().Cf(), i)
+            {
+                f[i] = vector(10.*sin(2.*pi*t/0.1), 0, 0);
+            }
+
+            operator==(f);
+        #};
+    }
+
