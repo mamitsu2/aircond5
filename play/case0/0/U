@@ -43,7 +43,7 @@ boundaryField
   inlet
   {
     type fixedValue;
-    value uniform (0.0382683 -0.092388 0);
+    value uniform (0.46194 -0.191342 0);
   }
   glass1
   {
