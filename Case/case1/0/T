@@ -12,7 +12,7 @@ FoamFile
 
 dimensions [ 0 0 0 1 0 0 0 ];
 
-internalField uniform 303.7117094607873;
+internalField uniform 299.41975877704107;
 
 boundaryField
 {
@@ -55,7 +55,7 @@ boundaryField
   inlet
   {
     type fixedValue;
-    value uniform 295.15;
+    value uniform 299.15;
   }
   glass1
   {
