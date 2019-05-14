@@ -83,6 +83,16 @@ boundaryField
         alphaWall       uniform 0.24;
         value           uniform 306;
     }
+    heatsource1
+    {
+        type            fixedGradient;
+        gradient        uniform 0;
+    }
+    heatsource2
+    {
+        type            fixedGradient;
+        gradient        uniform 0;
+    }
     Table_master
     {
         type            zeroGradient;

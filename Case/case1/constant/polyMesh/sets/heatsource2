@@ -11,14 +11,17 @@ FoamFile
     format      ascii;
     class       faceSet;
     location    "constant/polyMesh/sets";
-    object      inlet;
+    object      heatsource2;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 
-1
+4
 (
-923 
+899 
+900 
+902 
+904 
 )
 
 // ************************************************************************* //
