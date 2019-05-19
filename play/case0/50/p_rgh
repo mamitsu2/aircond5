@@ -18,7 +18,7 @@ FoamFile
 dimensions      [1 -1 -2 0 0 0 0];
 
 internalField   nonuniform List<scalar> 
-458
+459
 (
 101325
 101325
@@ -362,11 +362,6 @@ internalField   nonuniform List<scalar>
 101325
 101325
 101325
-101326
-101326
-101326
-101326
-101326
 101325
 101325
 101325
@@ -400,9 +395,15 @@ internalField   nonuniform List<scalar>
 101325
 101325
 101325
-101326
-101326
-101326
+101325
+101325
+101325
+101325
+101325
+101325
+101325
+101325
+101325
 101325
 101325
 101325
@@ -512,6 +513,14 @@ boundaryField
         type            zeroGradient;
     }
     sun
+    {
+        type            zeroGradient;
+    }
+    heatsource1
+    {
+        type            zeroGradient;
+    }
+    heatsource2
     {
         type            zeroGradient;
     }
