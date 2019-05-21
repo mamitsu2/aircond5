@@ -8,9 +8,9 @@
 Build  : 6-1a0c91b3baa8
 Exec   : subsetMesh aircon -overwrite -patch ceiling
 Date   : May 19 2019
-Time   : 11:27:59
+Time   : 22:10:34
 Host   : "mmt3264-MacBookPro"
-PID    : 8573
+PID    : 5071
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/play/case0
 nProcs : 1
@@ -37,6 +37,3 @@ Subsetting field p
 Subsetting field T
 Subsetting field epsilon
 Subsetting field U
-Writing subsetted mesh and fields to time 0
-End
-

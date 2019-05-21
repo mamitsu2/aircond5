@@ -12,7 +12,7 @@ FoamFile
 
 dimensions [ 0 0 0 1 0 0 0 ];
 
-internalField uniform 301.6211814829391;
+internalField uniform 304.1519721724307;
 
 boundaryField
 {
@@ -55,7 +55,17 @@ boundaryField
   inlet
   {
     type fixedValue;
-    value uniform 290.15;
+    value uniform 293.15;
+  }
+  heatsource2
+  {
+    type fixedGradient;
+    gradient uniform 0;
+  }
+  heatsource1
+  {
+    type fixedGradient;
+    gradient uniform 0;
   }
   glass1
   {
@@ -77,24 +87,6 @@ boundaryField
     Tinf uniform 305.2;
     alphaWall uniform 0.24;
     value uniform 306;
-  }
-  heatsource1
-  {
-    type fixedGradient;
-    gradient uniform 0;
-  }
-  heatsource2
-  {
-    type fixedGradient;
-    gradient uniform 0;
-  }
-  Table_master
-  {
-    type zeroGradient;
-  }
-  Table_slave
-  {
-    type zeroGradient;
   }
 } 	// ************************************************************************* //
 

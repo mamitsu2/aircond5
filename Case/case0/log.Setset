@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-1a0c91b3baa8
 Exec   : setSet -constant
-Date   : May 19 2019
-Time   : 10:08:51
+Date   : May 20 2019
+Time   : 06:38:04
 Host   : "mmt3264-MacBookPro"
-PID    : 4626
+PID    : 12748
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/Case/case0
 nProcs : 1

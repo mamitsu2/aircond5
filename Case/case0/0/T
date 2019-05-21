@@ -12,7 +12,7 @@ FoamFile
 
 dimensions [ 0 0 0 1 0 0 0 ];
 
-internalField uniform 301.66156851914883;
+internalField uniform 306;
 
 boundaryField
 {
@@ -81,7 +81,7 @@ boundaryField
   heatsource1
   {
     type fixedGradient;
-    gradient uniform 0;
+    gradient uniform 50;
   }
   heatsource2
   {
