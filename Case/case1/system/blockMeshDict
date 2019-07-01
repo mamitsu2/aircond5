@@ -39,7 +39,7 @@ blocks
     )
     (40 12 1)
     simpleGrading
-    (1 1 1)
+    (2 2 2)
   );
 
 edges

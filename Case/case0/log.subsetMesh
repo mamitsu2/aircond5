@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-1a0c91b3baa8
 Exec   : subsetMesh aircon -overwrite -patch ceiling
-Date   : May 20 2019
-Time   : 06:38:04
+Date   : Jun 14 2019
+Time   : 13:12:18
 Host   : "mmt3264-MacBookPro"
-PID    : 12747
+PID    : 6149
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/Case/case0
 nProcs : 1
@@ -21,22 +21,12 @@ allowSystemOperations : Allowing user-supplied system call operations
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 Create time
 
-Create mesh for time = 0
+Create mesh for time = 100
 
 Reading cell set from aircon
 
 Adding exposed internal faces to patch ceiling
 
-Subsetting field nut
-Subsetting field k
-Subsetting field p_rgh
-Subsetting field G
-Subsetting field IDefault
-Subsetting field alphat
-Subsetting field p
-Subsetting field T
-Subsetting field epsilon
-Subsetting field U
-Writing subsetted mesh and fields to time 0
+Writing subsetted mesh and fields to time 100
 End
 

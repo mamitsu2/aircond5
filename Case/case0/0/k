@@ -21,22 +21,7 @@ internalField   uniform 0.1;
 
 boundaryField
 {
-    floor
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-    ceiling
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-    sWall
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-    nWall
+    ".*"
     {
         type            kqRWallFunction;
         value           uniform 0.1;
@@ -55,17 +40,7 @@ boundaryField
         intensity       0.05;  //5 %
         value           uniform 1;
     }
-    glass1
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-    glass2
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-    sun
+    heatsource2
     {
         type            kqRWallFunction;
         value           uniform 0.1;
@@ -75,22 +50,15 @@ boundaryField
         type            kqRWallFunction;
         value           uniform 0.1;
     }
-    heatsource2
+    outlet
     {
-        type            kqRWallFunction;
-        value           uniform 0.1;
+        type            zeroGradient;
     }
-    Table_master
+    inlet
     {
-        type            kqRWallFunction;
-        coupleGroup     Table;
-        value           uniform 0.1;
-    }
-    Table_slave
-    {
-        type            kqRWallFunction;
-        coupleGroup     Table;
-        value           uniform 0.1;
+        type            turbulentIntensityKineticEnergyInlet;
+        inletensity     0.05;  //5 %
+        value           uniform 1;
     }
 }
 

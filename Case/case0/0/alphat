@@ -21,22 +21,7 @@ internalField   uniform 0;
 
 boundaryField
 {
-    floor
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
-    ceiling
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
-    sWall
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
-    nWall
+    ".*"
     {
         type            compressible::alphatWallFunction;
         value           uniform 0;
@@ -54,17 +39,7 @@ boundaryField
         type            fixedValue;
         value           uniform 1.94e-05;
     }
-    glass1
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
-    glass2
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
-    sun
+    heatsource2
     {
         type            compressible::alphatWallFunction;
         value           uniform 0;
@@ -74,24 +49,17 @@ boundaryField
         type            compressible::alphatWallFunction;
         value           uniform 0;
     }
-    heatsource2
+    outlet
     {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
+        type            zeroGradient;
     }
-    Table_master
+    inlet
     {
-        type            compressible::alphatWallFunction;
-        coupleGroup     Table;
-        value           uniform 0;
-    }
-    Table_slave
-    {
-        type            compressible::alphatWallFunction;
-        coupleGroup     Table;
-        value           uniform 0;
+        type            fixedValue;
+        value           uniform 1.94e-05;
     }
 }
+
 
 
 // ************************************************************************* //

@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-1a0c91b3baa8
 Exec   : createPatch -dict system/createPatchDict2 -overwrite
-Date   : May 19 2019
-Time   : 10:08:52
+Date   : Jun 03 2019
+Time   : 16:00:28
 Host   : "mmt3264-MacBookPro"
-PID    : 4711
+PID    : 20980
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/Case/case1
 nProcs : 1
@@ -25,19 +25,19 @@ Create polyMesh for time = 0
 
 Reading createPatchDict
 
-Adding new patch inlet as patch 12 from 
+Adding new patch inlet as patch 10 from 
 {
     type            patch;
 }
 
-Adding new patch outlet as patch 13 from 
+Adding new patch outlet as patch 11 from 
 {
     type            patch;
 }
 
 
-Read 1 faces from faceSet inlet
-Read 2 faces from faceSet outlet
+Read 0 faces from faceSet inlet
+Read 0 faces from faceSet outlet
 
 Doing topology modification to order faces.
 
