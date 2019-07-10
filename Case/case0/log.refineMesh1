@@ -1,0 +1,52 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 6-1a0c91b3baa8
+Exec   : refineMesh -overwrite
+Date   : Jul 10 2019
+Time   : 13:45:55
+Host   : "mmt3264-MacBookPro"
+PID    : 4011
+I/O    : uncollated
+Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/Case/case0
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Mesh edge statistics:
+    x aligned :  number:1002	minLen:0.2	maxLen:0.2
+    y aligned :  number:948	minLen:0.2	maxLen:0.2
+    z aligned :  number:517	minLen:0.1	maxLen:0.1
+    other     :  number:0	minLen:4.5036e+15	maxLen:-4.5036e+15
+
+Refining according to refineMeshDict
+
+Read 60 cells from cellSet "constant/polyMesh/sets/refineCell"
+
+Global Coordinate system:
+     normal : (0 0 1)
+     tan1   : (1 0 0)
+     tan2   : (0 1 0)
+
+Writing refined cells (240) to cellSet "constant/polyMesh/sets/refinedCells"
+
+Writing map from new to old cell to "/home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/Case/case0/0/polyMesh/cellMap"
+
+Mesh edge statistics:
+    x aligned :  number:1382	minLen:0.1	maxLen:0.2
+    y aligned :  number:1320	minLen:0.1	maxLen:0.2
+    z aligned :  number:713	minLen:0.1	maxLen:0.1
+    other     :  number:0	minLen:4.5036e+15	maxLen:-4.5036e+15
+
+End
+

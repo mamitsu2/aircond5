@@ -22,70 +22,70 @@ FoamFile
         type            wall;
         inGroups        1(wall);
         nFaces          29;
-        startFace       852;
+        startFace       1216;
     }
     ceiling
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          43;
-        startFace       881;
+        nFaces          54;
+        startFace       1245;
     }
     sWall
     {
         type            wall;
         inGroups        1(wall);
         nFaces          1;
-        startFace       924;
+        startFace       1299;
     }
     nWall
     {
         type            wall;
         inGroups        1(wall);
         nFaces          6;
-        startFace       925;
+        startFace       1300;
     }
     sideWalls
     {
         type            empty;
         inGroups        1(empty);
-        nFaces          918;
-        startFace       931;
+        nFaces          1278;
+        startFace       1306;
     }
     glass1
     {
         type            wall;
         inGroups        1(wall);
         nFaces          9;
-        startFace       1849;
+        startFace       2584;
     }
     glass2
     {
         type            wall;
         inGroups        1(wall);
         nFaces          2;
-        startFace       1858;
+        startFace       2593;
     }
     sun
     {
         type            wall;
         inGroups        1(wall);
         nFaces          14;
-        startFace       1860;
+        startFace       2595;
     }
     heatsource1
     {
         type            wall;
         inGroups        1(wall);
         nFaces          3;
-        startFace       1874;
+        startFace       2609;
     }
     heatsource2
     {
         type            wall;
         inGroups        1(wall);
         nFaces          4;
-        startFace       1877;
+        startFace       2612;
     }
     Table_master
     {
@@ -98,7 +98,7 @@ Table
 )
 ;
         nFaces          9;
-        startFace       1881;
+        startFace       2616;
     }
     Table_slave
     {
@@ -111,19 +111,19 @@ Table
 )
 ;
         nFaces          9;
-        startFace       1890;
+        startFace       2625;
     }
     inlet
     {
         type            patch;
-        nFaces          1;
-        startFace       1899;
+        nFaces          2;
+        startFace       2634;
     }
     outlet
     {
         type            patch;
         nFaces          2;
-        startFace       1900;
+        startFace       2636;
     }
 )
 

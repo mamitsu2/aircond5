@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-1a0c91b3baa8
 Exec   : createPatch -dict system/createPatchDict2 -overwrite
-Date   : Apr 22 2019
-Time   : 15:42:23
+Date   : Jul 02 2019
+Time   : 12:06:02
 Host   : "mmt3264-MacBookPro"
-PID    : 7204
+PID    : 8074
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5
 nProcs : 1
@@ -25,12 +25,12 @@ Create polyMesh for time = 0
 
 Reading createPatchDict
 
-Adding new patch inlet as patch 10 from 
+Adding new patch inlet as patch 12 from 
 {
     type            patch;
 }
 
-Adding new patch outlet as patch 11 from 
+Adding new patch outlet as patch 13 from 
 {
     type            patch;
 }

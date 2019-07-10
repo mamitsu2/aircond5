@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-1a0c91b3baa8
 Exec   : subsetMesh aircon -overwrite -patch ceiling
-Date   : Jun 03 2019
-Time   : 16:00:28
+Date   : Jul 10 2019
+Time   : 13:59:48
 Host   : "mmt3264-MacBookPro"
-PID    : 20978
+PID    : 4442
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/Case/case1
 nProcs : 1

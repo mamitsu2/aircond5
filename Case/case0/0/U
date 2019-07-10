@@ -10,6 +10,7 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volVectorField;
+    location    "0";
     object      U;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -20,7 +21,19 @@ internalField   uniform (0 0 0);
 
 boundaryField
 {
-    ".*"
+    floor
+    {
+        type            noSlip;
+    }
+    ceiling
+    {
+        type            noSlip;
+    }
+    sWall
+    {
+        type            noSlip;
+    }
+    nWall
     {
         type            noSlip;
     }
@@ -37,7 +50,15 @@ boundaryField
         type            fixedValue;
         value           uniform (0.5 0 0);
     }
-    heatsource2
+    glass1
+    {
+        type            noSlip;
+    }
+    glass2
+    {
+        type            noSlip;
+    }
+    sun
     {
         type            noSlip;
     }
@@ -45,14 +66,17 @@ boundaryField
     {
         type            noSlip;
     }
-    outlet
+    heatsource2
     {
-        type            zeroGradient;
+        type            noSlip;
     }
-    inlet
+    Table_master
     {
-        type            fixedValue;
-        value           uniform (0.5 0 0);
+        type            noSlip;
+    }
+    Table_slave
+    {
+        type            noSlip;
     }
 }
 

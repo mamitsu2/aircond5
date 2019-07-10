@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 6-1a0c91b3baa8
 Exec   : blockMesh
-Date   : Jun 03 2019
-Time   : 16:00:28
+Date   : Jul 10 2019
+Time   : 13:59:47
 Host   : "mmt3264-MacBookPro"
-PID    : 20947
+PID    : 4411
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/Case/case1
 nProcs : 1
@@ -47,8 +47,8 @@ Creating patches
 Creating cells
 Creating points with scale 1
     Block 0 cell size :
-        i : 0.138488 .. 0.276977
-        j : 0.13813 .. 0.276261
+        i : 0.2 .. 0.2
+        j : 0.2 .. 0.2
         k : 0.1 .. 0.1
 
 
