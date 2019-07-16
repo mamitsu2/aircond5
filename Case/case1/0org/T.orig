@@ -25,7 +25,7 @@ boundaryField
         type            wallHeatTransfer;
         Tinf            uniform 305.2;  // 外部温度
         alphaWall       uniform 0.24;  // 熱伝達係数
-        value           uniform 306;
+        value           uniform 300;
         
         //type            zeroGradient;
     }
@@ -34,7 +34,7 @@ boundaryField
         type            wallHeatTransfer;
         Tinf            uniform 303.2;  // 外部温度
         alphaWall       uniform 0.24;  // 熱伝達係数
-        value           uniform 306;
+        value           uniform 300;
         
         //type            zeroGradient;
     }
@@ -43,7 +43,7 @@ boundaryField
         type            wallHeatTransfer;
         Tinf            uniform 307.2;
         alphaWall       uniform 0.36;
-        value           uniform 306;
+        value           uniform 300;
         
         //type            zeroGradient;
     }
@@ -52,21 +52,21 @@ boundaryField
         type            wallHeatTransfer;
         Tinf            uniform 315.2;
         alphaWall       uniform 0.36;
-        value           uniform 306; 
+        value           uniform 300; 
     }
     glass1
     {
         type            wallHeatTransfer;
         Tinf            uniform 315.2;   // 外部温度
         alphaWall       uniform 4.3;   // 熱伝達係数
-        value           uniform 306;
+        value           uniform 300;
     }
     glass2
     {
         type            wallHeatTransfer;
         Tinf            uniform 307.2;   // 外部温度
         alphaWall       uniform 4.3;   // 熱伝達係数
-        value           uniform 306;
+        value           uniform 300;
     }
     sideWalls
     {
@@ -86,7 +86,7 @@ boundaryField
         type            wallHeatTransfer;
         Tinf            uniform 305.2;  // 外部温度
         alphaWall       uniform 0.24;  // 熱伝達係数
-        value           uniform 306;
+        value           uniform 300;
         /*
         type          compressible::turbulentHeatFluxTemperature;
         heatSource    flux;        // flux (熱流束) または power (熱量)

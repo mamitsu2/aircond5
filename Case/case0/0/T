@@ -12,7 +12,7 @@ FoamFile
 
 dimensions [ 0 0 0 1 0 0 0 ];
 
-internalField uniform 304.73883583428204;
+internalField uniform 305.08890807562165;
 
 boundaryField
 {
@@ -21,28 +21,67 @@ boundaryField
     type wallHeatTransfer;
     Tinf uniform 305.2;
     alphaWall uniform 0.24;
-    value uniform 306;
+    value nonuniform List<scalar> 36
+(
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  300
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+  306
+)
+;
   }
   ceiling
   {
     type wallHeatTransfer;
     Tinf uniform 303.2;
     alphaWall uniform 0.24;
-    value uniform 306;
+    value uniform 300;
   }
   sWall
   {
     type wallHeatTransfer;
     Tinf uniform 315.2;
     alphaWall uniform 0.36;
-    value uniform 306;
+    value uniform 300;
   }
   nWall
   {
     type wallHeatTransfer;
     Tinf uniform 307.2;
     alphaWall uniform 0.36;
-    value uniform 306;
+    value uniform 300;
   }
   sideWalls
   {
@@ -57,44 +96,36 @@ boundaryField
     type fixedValue;
     value uniform 290.15;
   }
-  glass1
+  heatsource2
   {
-    type wallHeatTransfer;
-    Tinf uniform 315.2;
-    alphaWall uniform 4.3;
-    value uniform 306;
-  }
-  glass2
-  {
-    type wallHeatTransfer;
-    Tinf uniform 307.2;
-    alphaWall uniform 4.3;
-    value uniform 306;
-  }
-  sun
-  {
-    type wallHeatTransfer;
-    Tinf uniform 305.2;
-    alphaWall uniform 0.24;
-    value uniform 306;
+    type fixedGradient;
+    gradient uniform 0;
   }
   heatsource1
   {
     type fixedGradient;
     gradient uniform 0;
   }
-  heatsource2
+  glass1
   {
-    type fixedGradient;
-    gradient uniform 0;
+    type wallHeatTransfer;
+    Tinf uniform 315.2;
+    alphaWall uniform 4.3;
+    value uniform 300;
   }
-  Table_master
+  glass2
   {
-    type zeroGradient;
+    type wallHeatTransfer;
+    Tinf uniform 307.2;
+    alphaWall uniform 4.3;
+    value uniform 300;
   }
-  Table_slave
+  sun
   {
-    type zeroGradient;
+    type wallHeatTransfer;
+    Tinf uniform 305.2;
+    alphaWall uniform 0.24;
+    value uniform 300;
   }
 } 	// ************************************************************************* //
 

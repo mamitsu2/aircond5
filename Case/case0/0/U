@@ -45,6 +45,14 @@ boundaryField
     type fixedValue;
     value uniform (0.1 0 0);
   }
+  heatsource2
+  {
+    type noSlip;
+  }
+  heatsource1
+  {
+    type noSlip;
+  }
   glass1
   {
     type noSlip;
@@ -54,22 +62,6 @@ boundaryField
     type noSlip;
   }
   sun
-  {
-    type noSlip;
-  }
-  heatsource1
-  {
-    type noSlip;
-  }
-  heatsource2
-  {
-    type noSlip;
-  }
-  Table_master
-  {
-    type noSlip;
-  }
-  Table_slave
   {
     type noSlip;
   }
