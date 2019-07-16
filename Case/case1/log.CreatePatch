@@ -8,9 +8,9 @@
 Build  : 6-1a0c91b3baa8
 Exec   : createPatch -dict system/createPatchDict2 -overwrite
 Date   : Jul 17 2019
-Time   : 04:28:47
+Time   : 04:32:19
 Host   : "mmt3264-MacBookPro"
-PID    : 24042
+PID    : 25110
 I/O    : uncollated
 Case   : /home/mmt3264/OpenFOAM/mmt3264-6/run/aircond5/Case/case1
 nProcs : 1
@@ -25,15 +25,28 @@ Create polyMesh for time = 0
 
 Reading createPatchDict
 
-Adding new patch inlet as patch 10 from 
+Adding new patch inlet as patch 12 from 
 {
     type            patch;
 }
 
-Adding new patch outlet as patch 11 from 
+Adding new patch outlet as patch 13 from 
 {
     type            patch;
 }
 
 
 Read 1 faces from faceSet inlet
+Read 2 faces from faceSet outlet
+
+Doing topology modification to order faces.
+
+Not synchronising points.
+
+Removing patches with no faces in them.
+
+No patches removed.
+Writing repatched mesh to 0
+
+End
+

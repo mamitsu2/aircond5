@@ -67,22 +67,6 @@ boundaryField
         mixingLength    0.01;  // [m]
         value           uniform 1;
     }
-    heatsource2
-    {
-        type            epsilonWallFunction;
-        Cmu             0.09;
-        kappa           0.41;
-        E               9.8;
-        value           uniform 0.01;
-    }
-    heatsource1
-    {
-        type            epsilonWallFunction;
-        Cmu             0.09;
-        kappa           0.41;
-        E               9.8;
-        value           uniform 0.01;
-    }
     glass1
     {
         type            epsilonWallFunction;
@@ -106,6 +90,40 @@ boundaryField
         kappa           0.41;
         E               9.8;
         value           uniform 0.01;
+    }
+    heatsource1
+    {
+        type            epsilonWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        value           uniform 0.01;
+    }
+    heatsource2
+    {
+        type            epsilonWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        value           uniform 0.01;
+    }
+    Table_master
+    {
+        type            epsilonWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        coupleGroup     Table;
+        value           uniform 0;
+    }
+    Table_slave
+    {
+        type            epsilonWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        coupleGroup     Table;
+        value           uniform 0;
     }
 }
 

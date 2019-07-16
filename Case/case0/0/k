@@ -55,16 +55,6 @@ boundaryField
         intensity       0.05;  //5 %
         value           uniform 1;
     }
-    heatsource2
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-    heatsource1
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
     glass1
     {
         type            kqRWallFunction;
@@ -78,6 +68,28 @@ boundaryField
     sun
     {
         type            kqRWallFunction;
+        value           uniform 0.1;
+    }
+    heatsource1
+    {
+        type            kqRWallFunction;
+        value           uniform 0.1;
+    }
+    heatsource2
+    {
+        type            kqRWallFunction;
+        value           uniform 0.1;
+    }
+    Table_master
+    {
+        type            kqRWallFunction;
+        coupleGroup     Table;
+        value           uniform 0.1;
+    }
+    Table_slave
+    {
+        type            kqRWallFunction;
+        coupleGroup     Table;
         value           uniform 0.1;
     }
 }
