@@ -153,17 +153,17 @@ python ./makeoutlet/outletG.py ./0/G
 python ./makeoutlet/outletG.py ./0/IDefault
 
 
-
+<<COMMENTOUT
 echo "setSet"
 setSet -constant > log.setSet2 << EOF
-cellSet refineCell new boxToCell (0.399 1.199 -0.001) (2.401 2.401 0.101)
+cellSet refineCell new boxToCell (-0.001 1.199 -0.001) (2.401 2.401 0.101)
 quit
 EOF
 
 
 echo "refineMesh"
 refineMesh -overwrite > log.refineMesh1
-
+COMMENTOUT
 
 #echo "renumberMesh"
 #renumberMesh -dict system/renumberMeshDict -overwrite > log.renumber
